@@ -1,0 +1,33 @@
+<div class="flex flex-col shadow-xl p-4 my-2 bg-indigo-700">
+    <div class="flex flex-col">
+        <div class="flex opacity-50 text-xs text-white">
+            <div class="css-1g9vbbl">{{ start_date }}</div>
+            {{ if end_date }}
+            <div class="css-m9dm0d">-</div>
+            <div class="css-1g9vbbl">{{ end_date }}</div>
+            {{ /if }}
+        </div>
+        <div class="mt-4 flex flex-col items-start">
+            <h2 class="text-white">
+                {{ if url }}
+                <a target="_blank" href={{ url }} >
+                    {{ title }}
+                </a>
+                {{ else }}
+                    {{ title }}
+                {{ /if }}
+            </h2>
+            <a href={{ url }} target="_blank" class="text-xs underline"> {{ url }} </a>
+            <p class="text-base"> {{ description }} </p>
+        </div>
+    </div>
+    <div class="flex mt-4">
+        {{ collection:project_tags }}
+
+        {{ partial:projects/project_tag
+            title=project_tag
+        }}
+
+        {{ /collection:project_tags }}
+    </div>
+</div>

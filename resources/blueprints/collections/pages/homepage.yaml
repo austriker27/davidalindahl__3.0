@@ -1,0 +1,50 @@
+title: Homepage
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: banner
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Banner
+      -
+        handle: subtitle
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Subtitle
+      -
+        handle: about_text
+        field:
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: 'About text'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false

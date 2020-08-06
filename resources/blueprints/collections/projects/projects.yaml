@@ -1,0 +1,75 @@
+title: Projects
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: description
+        field:
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: Description
+      -
+        handle: url
+        field:
+          type: link
+          localizable: false
+          listable: hidden
+          display: Url
+      -
+        handle: start_date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          type: date
+          localizable: false
+          width: 50
+          listable: hidden
+          display: 'Start Date'
+      -
+        handle: end_date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          type: date
+          localizable: false
+          width: 50
+          listable: hidden
+          display: 'End Date'
+      -
+        handle: project_tags
+        field:
+          mode: default
+          collections:
+            - project_tags
+          type: entries
+          localizable: false
+          listable: hidden
+          display: 'Project Tags'
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
