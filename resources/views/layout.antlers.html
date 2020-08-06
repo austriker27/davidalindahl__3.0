@@ -4,9 +4,30 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
+        <title>{{ if meta_title }}{{ meta_title }}{{ else }}{{ title ensure_right=" - " }}{{ site_name }}{{ /if }}</title>
+        <meta property="og:title"
+            content="{{ if meta_title }}{{ meta_title }}{{ else }}{{ title ensure_right=" - " }}{{ site_name }}{{ endif }}" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="{{ site_url | remove_right:/ }}{{ url }}" />
+        <meta property="og:image"
+            content="{{ site_url | remove_right:/ }}{{ if assets:meta_image }}{{ assets:meta_image }}{{ url }}{{ /assets:meta_image }} {{ else }}{{ assets:global_meta_image }}{{ url }}{{ /assets:global_meta_image }}{{/if}}" />
+        {{ assets:website_favicon }}
+        <link rel="icon" type="image/png" href="{{ url }}">
+        {{ /assets:website_favicon }}
+        {{ assets:website_touch_icon }}
+        <link rel="apple-touch-icon" href="{{ url }}">
+        {{ /assets:website_touch_icon }}
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <script src="{{ mix src='/js/site.js' }}"></script>
+
+        {{ if head_scripts }}
+        <!-- Custom Head Scripts -->
+        {{ head_scripts }}
+        {{ code }}
+        {{ /head_scripts }}
+        <!-- End Custom Head Scripts -->
+        {{ /if }}
+
     </head>
     <body class="bg-gray-200 font-sans leading-normal text-grey-800">
         <div class="mx-auto px-2 h-screen flex items-center justify-center">
