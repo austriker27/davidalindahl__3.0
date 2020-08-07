@@ -8,6 +8,9 @@ sections:
         field:
           type: text
           required: true
+          display: Title
+          listable: hidden
+          input_type: text
       -
         handle: start_date
         field:
@@ -56,3 +59,11 @@ sections:
           type: slug
           required: true
           localizable: true
+      -
+        handle: featured
+        field:
+          type: toggle
+          instructions: 'Shows on the home page'
+          localizable: false
+          listable: hidden
+          display: Featured

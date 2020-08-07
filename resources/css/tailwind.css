@@ -5,3 +5,42 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+a {
+    @apply underline;
+    @apply text-indigo-500;
+}
+
+h1, h2, h3, h4, h5 {
+    @apply text-pink-700;
+    @apply font-bold;
+}
+
+h1::before, h2::before, h3::before, h4::before, h5::before {
+    content: '→';
+    color: var(--theme-ui-colors-success,#F1F5F9);
+    margin-right: 8px;
+}
+
+h1::after, h2::after, h3::after, h4::after, h5::after {
+    content: '()';
+    color: var(--theme-ui-colors-secondary,#A832D7);
+    margin-left: 4px;
+}
+
+h1 {
+    @apply text-3xl;
+}
+
+h2 {
+    @apply text-2xl;
+}
+
+h3 {
+    @apply text-xl;
+}
+
+p {
+    @apply text-white;
+    @apply text-base;
+}

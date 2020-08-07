@@ -1,4 +1,4 @@
-title: Projects
+title: Employers
 sections:
   main:
     display: Main
@@ -9,19 +9,28 @@ sections:
           type: text
           required: true
       -
-        handle: description
+        handle: employer_name
         field:
-          type: textarea
-          localizable: false
+          type: text
+          required: true
+          display: 'Employer name'
           listable: hidden
-          display: Description
+          input_type: text
       -
-        handle: url
+        handle: employer_url
         field:
           type: link
           localizable: false
           listable: hidden
-          display: Url
+          display: 'Employer Url'
+      -
+        handle: job_roles
+        field:
+          input_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: 'Job Roles'
       -
         handle: start_date
         field:
@@ -30,7 +39,7 @@ sections:
           time_required: false
           earliest_date: '1900-01-01'
           full_width: false
-          inline: false
+          inline: true
           columns: 1
           rows: 1
           type: date
@@ -46,7 +55,7 @@ sections:
           time_required: false
           earliest_date: '1900-01-01'
           full_width: false
-          inline: false
+          inline: true
           columns: 1
           rows: 1
           type: date
@@ -54,16 +63,6 @@ sections:
           width: 50
           listable: hidden
           display: 'End Date'
-      -
-        handle: project_tags
-        field:
-          mode: default
-          collections:
-            - project_tags
-          type: entries
-          localizable: false
-          listable: hidden
-          display: 'Project Tags'
   sidebar:
     display: Sidebar
     fields:
@@ -73,11 +72,3 @@ sections:
           type: slug
           required: true
           localizable: true
-      -
-        handle: featured
-        field:
-          type: toggle
-          instructions: 'Shows as featured on the home page'
-          localizable: false
-          listable: hidden
-          display: Featured

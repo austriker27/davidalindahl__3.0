@@ -1,4 +1,5 @@
 title: Accolades
+template: accolades/show
 revisions: false
 date_behavior:
   past: public

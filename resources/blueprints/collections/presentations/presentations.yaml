@@ -1,0 +1,40 @@
+title: Presentations
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+      -
+        handle: url
+        field:
+          type: link
+          localizable: false
+          listable: hidden
+          display: Url
+      -
+        handle: date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: true
+          columns: 1
+          rows: 1
+          type: date
+          localizable: false
+          listable: hidden
+          display: Date
+  sidebar:
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true

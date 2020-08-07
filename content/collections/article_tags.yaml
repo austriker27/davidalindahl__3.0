@@ -1,5 +1,4 @@
-title: Articles
-template: articles/show
+title: 'Article Tags'
 revisions: false
 date_behavior:
   past: public

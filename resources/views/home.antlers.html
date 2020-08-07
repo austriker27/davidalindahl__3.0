@@ -1,28 +1,130 @@
-<div class="bg-white text-indigo-900">
-    <p>{{ banner }}</p>
+<div class="bg-white p-4">
+    <p class="text-indigo-900 ">{{ banner }}</p>
 </div>
 
-<h1> {{ title }} </h1>
+<div class="my-3">
+    {{ partial:text/headers
+        text=title
+        header_type="h1"
+    }}
+    <p> {{ subtitle }} </p>
+</div>
 
-<h2> {{ subtitle }} </h2>
+<div class="my-3">
+    {{ partial:text/headers
+        text="About"
+        header_type="h2"
+    }}
+    <p>{{ about_text }}</p>
 
-<h2>About</h2>
-<p>{{ about_text }}</p>
+    {{ partial:components/button
+        text="View Resume"
+        url="https://austriker27.github.io/resume/"
+    }}
+</div>
 
-<div class="">
-    <h2>Portfolio</h2>
-    <p>Sample my coding prowess</p>
-    {{ collection:projects }}
+<div class="my-3">
+    {{ partial:quote-block }}
+</div>
+
+<div class="my-3">
+    {{ partial:text/headers
+        text="Portfolio"
+        header_type="h2"
+    }}
+    <p>Just a smattering of my favorite projects:</p>
+    {{ collection:projects featured:exists="true" sort="date:asc|title:desc" }}
 
         {{ partial:projects/project_card }}
 
     {{ /collection:projects }}
 
-    <h2>Side Projects</h2>
-    <p>I love building things and helping people.</p>
-    {{ collection:side_projects }}
+    {{ partial:components/button
+        text="See All"
+        url="/projects"
+    }}
 
-    {{ partial:projects/project_card }}
+    {{ partial:text/headers
+        text="Side Projects"
+        header_type="h2"
+    }}
+    <p>Some side projects that were the bee's knees, at least I thought so.</p>
+
+    {{ collection:side_projects featured:exists="true" sort="date:asc|title:desc" }}
+
+        {{ partial:projects/project_card }}
 
     {{ /collection:side_projects }}
+
+    {{ partial:components/button
+        text="See All"
+        url="/side-projects"
+    }}
+</div>
+
+<div class="my-3">
+    <div class="flex flex-col md:flex-row">
+        <div class="flex flex-col">
+            {{ partial:text/headers
+                text="Experience"
+                header_type="h3"
+            }}
+
+            {{ collection:employers sort="date:asc" }}
+
+                {{ if employer_url }}
+                    <a class="text-white text-sm" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
+                {{ else }}
+                    <p class="text-white text-sm"> {{ employer_name | lower }} </p>
+                {{ /if }}
+
+                <p class="text-white text-sm">{{ job_roles | lower }}</p>
+
+                <p class="text-white opacity-75 text-xs">
+                    {{ start_date }} to {{ end_date }}
+                </p>
+
+            {{ /collection:employers }}
+        </div>
+
+        <div class="flex flex-col">
+            {{ partial:text/headers
+                text="Presentations"
+                header_type="h3"
+            }}
+
+            {{ collection:presentations }}
+
+            {{ if url }}
+            <a class="text-white text-sm" href="{{ url }}"> {{ title }} </a>
+            {{ else }}
+            <p class="text-white text-sm"> {{ title }} </p>
+            {{ /if }}
+
+            <p class="text-white opacity-75 text-xs">
+                {{ date }}
+            </p>
+
+            {{ /collection:presentations }}
+        </div>
+
+        <div class="flex flex-col">
+            {{ partial:text/headers
+                        text="Accolades"
+                        header_type="h3"
+                    }}
+
+            {{ collection:accolades sort="date:asc" }}
+
+            <p class="text-white text-sm"> {{ title }} </p>
+
+            <p class="text-white opacity-75 text-xs">
+                {{ date }}
+            </p>
+
+            {{ /collection:accolades }}
+        </div>
+
+
+    </div>
 </div>
