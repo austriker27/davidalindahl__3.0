@@ -1,0 +1,17 @@
+<div class="py-8">
+    {{ responsive:image class="w-full" }}
+
+    {{ if width == "page" }}
+    <div class="h-auto w-full">
+        {{ responsive:image alt="{ image:alt }" class="w-full" }}
+    </div>
+
+    {{ elseif width == "container" }}
+
+    <div class="container mx-auto">
+        <div class="w-full h-auto">
+            {{ responsive:image alt="{ image:alt }" class="" }}
+        </div>
+    </div>
+    {{ /if }}
+</div>

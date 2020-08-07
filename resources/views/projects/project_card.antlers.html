@@ -1,6 +1,6 @@
-<div class="flex flex-col shadow-xl p-4 my-2 bg-indigo-700">
+<div class="flex flex-col shadow-xl p-4 my-2 bg-surface">
     <div class="flex flex-col">
-        <div class="flex opacity-50 text-xs text-white">
+        <div class="flex opacity-50 text-xs text-success">
             <div class="css-1g9vbbl">{{ start_date }}</div>
             {{ if end_date }}
             <div class="css-m9dm0d"> - </div>
@@ -8,9 +8,9 @@
             {{ /if }}
         </div>
         <div class="mt-4 flex flex-col items-start">
-            <p class="text-2xl text-white">
+            <p class="text-2xl text-success">
                 {{ if url }}
-                <a class="text-white font-semibold" target="_blank" href={{ url }} >
+                <a class="text-success font-semibold" target="_blank" href={{ url }} >
                     {{ title }}
                 </a>
                 {{ else }}

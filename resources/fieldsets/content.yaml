@@ -1,0 +1,122 @@
+title: Content
+fields:
+  -
+    handle: content
+    field:
+      sets:
+        cover_image:
+          display: 'Hero Image'
+          fields:
+            -
+              handle: assets
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                type: assets
+                localizable: false
+                listable: hidden
+                display: Assets
+        text:
+          display: Text
+          fields:
+            -
+              handle: markdown
+              field:
+                restrict: false
+                automatic_line_breaks: true
+                automatic_links: false
+                escape_markup: false
+                smartypants: false
+                type: markdown
+                localizable: false
+                listable: hidden
+                display: Markdown
+        image:
+          display: Image
+          fields:
+            -
+              handle: assets
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                max_files: 1
+                type: assets
+                localizable: false
+                listable: hidden
+                display: Assets
+            -
+              handle: width
+              field:
+                options:
+                  Page: page
+                  Container: container
+                inline: true
+                type: radio
+                localizable: false
+                listable: hidden
+                display: Width
+        header:
+          display: Header
+          fields:
+            -
+              handle: text
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Text
+            -
+              handle: radio
+              field:
+                options:
+                  h1: h1
+                  h2: h2
+                  h3: h3
+                  h4: h4
+                  h5: h5
+                inline: false
+                type: radio
+                localizable: false
+                listable: hidden
+                display: Radio
+        image_gallery:
+          display: 'Image Gallery'
+          fields:
+            -
+              handle: images
+              field:
+                mode: grid
+                restrict: false
+                allow_uploads: true
+                type: assets
+                localizable: false
+                listable: hidden
+                display: Images
+      buttons:
+        - h2
+        - h3
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - removeformat
+        - quote
+        - anchor
+        - image
+        - table
+      save_html: false
+      toolbar_mode: fixed
+      link_noopener: false
+      link_noreferrer: false
+      target_blank: false
+      reading_time: false
+      fullscreen: true
+      allow_source: true
+      type: bard
+      localizable: false
+      listable: hidden
+      display: Content

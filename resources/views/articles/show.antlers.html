@@ -1,0 +1,34 @@
+{{ responsive:cover_image alt="{ cover_image:alt }" class="object-cover object-center w-full" }}
+
+<div class="my-4">
+    {{ partial:text/headers
+        :text="title"
+        header_type="h2"
+    }}
+</div>
+
+<div class="my-4 flex flex-col md:flex-row md:justify-between">
+    <p class="opacity-50 text-sm">
+        Date published: {{ date_published }}
+    </p>
+    <p class="opacity-50 text-sm">
+        Date modified: {{ date_modified }}
+    </p>
+    {{#
+        <p class="opacity-50 text-sm">
+            {{ content | word_count }} words / {{ content | read_time:180 }} mins
+        </p>
+    #}}
+</div>
+
+<div class="my-4 flex flex-wrap">
+    {{ article_tags }}
+        {{ partial:projects/project_tag
+            :text="title"
+        }}
+    {{ /article_tags }}
+</div>
+
+{{ content }}
+{{ partial src="sets/{type}" }}
+{{ /content }}

@@ -1,0 +1,20 @@
+{{ partial:text/headers
+    :text="title"
+    header_type="h2"
+}}
+
+<div class="my-3">
+    {{ bard }}
+        {{ partial src="sets/{type}" }}
+    {{ /bard }}
+</div>
+
+<div class="flex flex-col md:flex-row flex-wrap">
+    {{ collection:articles }}
+    <a href="{{ url }}" class="transition-colors duration-300 ease-in-out no-underline group bg-surface p-4 flex flex-col w-full md:w-1/2 ">
+        {{ responsive:cover_image alt="{ cover_image:alt }" class="object-cover object-center h-64" }}
+        <p class="text-success text-base group-hover:text-primary"> {{ title }} </p>
+        <p class="text-success opacity-50 text-xs group-hover:text-primary"> {{ date_published }} </p>
+    </a>
+    {{ /collection:articles }}
+</div>

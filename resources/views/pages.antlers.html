@@ -1,0 +1,10 @@
+{{ partial:text/headers
+    :text="title"
+    header_type="h2"
+}}
+
+<div class="flex flex-col">
+    {{ bard }}
+        {{ partial src="sets/{type}" }}
+    {{ /bard }}
+</div>

@@ -29,17 +29,17 @@
         {{ /if }}
 
     </head>
-    <body class="bg-indigo-900 font-mono leading-loose text-grey-100 flex flex-col md:flex-row">
-        <header class="border-solid border-opacity-75 border-b md:border-b-0 md:border-r border-indigo-700 md:pr-12 md:pt-8">
+    <body class="bg-background font-mono leading-loose text-surface flex flex-col md:flex-row">
+        <header class="border-solid border-opacity-75 border-b md:border-b-0 md:border-r border-surface md:pr-12">
             <nav>
                 {{ partial:nav/navbar }}
             </nav>
         </header>
         <main class="min-h-screen flex flex-col w-full">
-            <div class="h-8 border-solid border-opacity-75 border-b border-indigo-700">
+            <div class="h-16 border-solid border-opacity-75 border-b border-surface">
 
             </div>
-            <div class="container px-8 py-4 mx-auto px-2 ">
+            <div class="container px-8 py-4 mx-auto px-2 mt-4">
                 {{ template_content }}
             </div>
         </main>
