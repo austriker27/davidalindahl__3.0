@@ -4,8 +4,8 @@
     :class="{'fixed top-0 left-0 w-64 h-full ': MenuIsOpen }"
     x-data="{ MenuIsOpen: false }">
     <div class="flex justify-between align-center" :class="{'flex-col': MenuIsOpen, 'flex-row': !MenuIsOpen }">
-            <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="175px" height="35px">
+            <a href="/" class="h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="175px" class="h-6">
                     <g>
                         <path
                             d="M2.6,12.5c0-5.1,4.2-9.4,9.4-9.4l0,0V0.5c-3,0-5.6,1-7.8,2.9c-5,4.4-5.5,11.9-1.2,16.9l2-1.7 C3.5,17,2.6,14.8,2.6,12.5z"
@@ -20,9 +20,10 @@
                             class="fill-current text-success">
                             <tspan x="10" y="16">D</tspan>
                         </text>
-                    </g><text font-family="Inconsolata-Regular_SemiBold, Inconsolata, monospace" font-size="18" x="30" y="-0"
+                    </g>
+                    <text font-family="Inconsolata-Regular_SemiBold, Inconsolata, monospace" font-size="18" x="30" y="-0"
                         class="font-bold fill-current text-md text-success">
-                        <tspan x="30" y="18">{{ site_name }}</tspan>
+                        <tspan x="30" y="18">{{ site:name }}</tspan>
                     </text>
                 </svg>
 
