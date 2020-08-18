@@ -10,3 +10,11 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 ## TODOs
 - [] : Add read time to article
 - [] : More epic hover states
+- [] : design page
+
+## theme UI components from: 
+https://gatsby-theme-terminal.netlify.app/theme-ui-components/
+
+## general inspiration from: 
+
+- Jack McDade

@@ -1,23 +1,88 @@
 {{# MOBILE NAV #}}
-<div class="md:hidden border-solid border-b-1 border-success">
-    <ul class="flex flex-row justify-between">
-        <li>
-            <a href="/"> {{ title }} </a>
-        </li>
-        {{ nav include_home="false" }}
-        <li>
-            <a href="{{ url }}" {{ if is_current }} class="text-success" {{ /if }}>
-                {{ title }}
+<div
+    class="border-solid md:hidden border-b-1 border-success bg-background"
+    :class="{'fixed top-0 left-0 w-64 h-full ': MenuIsOpen }"
+    x-data="{ MenuIsOpen: false }">
+    <div class="flex justify-between align-center" :class="{'flex-col': MenuIsOpen, 'flex-row': !MenuIsOpen }">
+            <a href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" width="175px" height="35px">
+                    <g>
+                        <path
+                            d="M2.6,12.5c0-5.1,4.2-9.4,9.4-9.4l0,0V0.5c-3,0-5.6,1-7.8,2.9c-5,4.4-5.5,11.9-1.2,16.9l2-1.7 C3.5,17,2.6,14.8,2.6,12.5z"
+                            class="fill-current text-primary"></path>
+                        <path
+                            d="M12,21.9c-2.8,0-5.4-1.2-7.1-3.2l-2,1.7c0.4,0.5,0.9,0.9,1.4,1.3c5,4.3,12.6,3.6,16.8-1.5l-2-1.7 C17.4,20.6,14.8,21.9,12,21.9z"
+                            class="fill-current text-secondary"></path>
+                        <path
+                            d="M12,0.5v2.6c5.1,0,9.4,4.2,9.4,9.4c0,2.3-0.8,4.4-2.2,6l2,1.7c1.9-2.3,2.8-4.7,2.8-7.7 C23.9,5.9,18.6,0.5,12,0.5z"
+                            class="fill-current text-success"></path>
+                        <text font-family="Inconsolata-Regular_Medium, Inconsolata, monospace" font-size="11.5" x="10" y="2"
+                            class="fill-current text-success">
+                            <tspan x="10" y="16">D</tspan>
+                        </text>
+                    </g><text font-family="Inconsolata-Regular_SemiBold, Inconsolata, monospace" font-size="18" x="30" y="-0"
+                        class="font-bold fill-current text-md text-success">
+                        <tspan x="30" y="18">{{ site_name }}</tspan>
+                    </text>
+                </svg>
+
             </a>
-        </li>
-        {{ /nav }}
-    </ul>
+        <div class="flex -mr-2 md:hidden">
+            <!-- Mobile menu button -->
+            <button
+                class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
+                @click="MenuIsOpen = true"
+                aria-label="Main menu" aria-expanded="false">
+                <!-- Icon when menu is closed. -->
+                <!-- Menu open: "hidden", Menu closed: "block" -->
+                <svg :class="{'hidden': MenuIsOpen, 'block': !MenuIsOpen }" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <!-- Icon when menu is open. -->
+                <!-- Menu open: "block", Menu closed: "hidden" -->
+                <p :class="{'block': MenuIsOpen, 'hidden': !MenuIsOpen }" class="text-xs lowercase italics" @click="MenuIsOpen = false">
+                    close menu >>
+                </p>
+                {{# <svg :class="{'block': MenuIsOpen, 'hidden': !MenuIsOpen }" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg> #}}
+            </button>
+        </div>
+        <!--
+            Mobile menu, toggle classes based on menu state.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+        <div
+            :class="{'block': MenuIsOpen, 'hidden': !MenuIsOpen }"
+            class="md:hidden"
+            x-show="MenuIsOpen"
+            @click.away="MenuIsOpen = false"
+        >
+            <div class="px-2 pt-2 pb-3">
+                {{ nav include_home="false" }}
+                    <a class="block px-3 py-2 text-base font-medium text-white transition duration-150 ease-in-out bg-gray-900 rounded-md focus:outline-none focus:text-white focus:bg-gray-700" href="{{ url }}" {{ if is_current }} class="block px-3 py-2 text-base font-medium transition duration-150 ease-in-out bg-gray-900 rounded-md focus:outline-none focus:text-white focus:bg-gray-700 text-success" {{ /if }}>
+                    {{ title }}
+                </a>
+                {{ /nav }}
+                {{# <a href="#"
+                    class="block px-3 py-2 text-base font-medium text-white transition duration-150 ease-in-out bg-gray-900 rounded-md focus:outline-none focus:text-white focus:bg-gray-700">Dashboard</a>
+                <a href="#"
+                    class="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Team</a>
+                <a href="#"
+                    class="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Projects</a>
+                <a href="#"
+                    class="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Calendar</a> #}}
+            </div>
+        </div>
+
+    </div>
 </div>
 
 {{# DESKTOP NAV #}}
-<div class="w-64 hidden md:inline-block">
+<div class="hidden w-64 md:inline-block">
     <ul class="flex justify-end">
-        <li class="h-16 flex items-center">
+        <li class="flex items-center h-16">
             <a href="/">
                 <svg xmlns="http://www.w3.org/2000/svg"   width="175px" height="35px">
                     <g>
@@ -35,7 +100,7 @@
                             <tspan x="10" y="16">D</tspan>
                         </text>
                     </g><text font-family="Inconsolata-Regular_SemiBold, Inconsolata, monospace" font-size="18"
-                        x="30" y="-0" class="text-md font-bold fill-current text-success">
+                        x="30" y="-0" class="font-bold fill-current text-md text-success">
                         <tspan x="30" y="18">{{ site_name }}</tspan>
                     </text>
                 </svg>
