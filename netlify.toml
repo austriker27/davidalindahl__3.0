@@ -4,6 +4,7 @@ command = "php please ssg:generate"
 
 [context.production.environment]
 PHP_VERSION="7.4"
+APP_URL="https://v3.davidalindahl.com"
 
 [[headers]]
   for = "/feed"
