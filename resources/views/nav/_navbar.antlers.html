@@ -68,22 +68,14 @@
             <div  class="hidden"
                 @click.away="MenuIsOpen = false">
                 <div class="px-2 pt-2 pb-3">
-                    {{ nav include_home="false" }}
+                    {{ nav:main_nav include_home="false"  }}
                     <a class="block px-3 py-2 text-base font-medium text-white transition duration-150 ease-in-out focus:text-white focus:bg-gray-700"
                         href="{{ url }}" {{ if is_current }}
                         class="block px-3 py-2 text-base font-medium transition duration-150 ease-in-out focus:text-white focus:bg-gray-700 text-success"
                         {{ /if }}>
                         {{ title }}
                     </a>
-                    {{ /nav }}
-                    {{# <a href="#"
-                        class="block px-3 py-2 text-base font-medium text-white transition duration-150 ease-in-out focus:text-white focus:bg-gray-700">Dashboard</a>
-                    <a href="#"
-                        class="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Team</a>
-                    <a href="#"
-                        class="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Projects</a>
-                    <a href="#"
-                        class="block px-3 py-2 mt-1 text-base font-medium text-gray-300 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Calendar</a> #}}
+                    {{ /nav:main_nav }}
                 </div>
             </div>
 
@@ -91,18 +83,30 @@
     </div>
 
     {{# MOBILE NAV OPEN #}}
-    <div class="absolute top-0 left-0 w-screen h-screen" x-show="MenuIsOpen" @click.away="MenuIsOpen = false">
+    <div
+        class="absolute top-0 left-0 w-screen h-screen"
+        x-show="MenuIsOpen"
+        @click.away="MenuIsOpen = false"
+        x-transition:enter="transition ease-out duration-100 transform"
+        x-transition:enter-start="opacity-0 scale-95"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-75 transform"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-95"
+        >
         <div class="absolute top-0 left-0 w-screen h-screen bg-black opacity-75">
-
         </div>
         <div
             class="fixed top-0 left-0 w-64 h-full border-solid md:hidden border-b-1 border-success bg-background"
-            x-transition:enter="transition ease-out duration-100 transform"
-            x-transition:enter-start="opacity-0 scale-95"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-75 transform"
-            x-transition:leave-start="opacity-100 scale-100"
-            x-transition:leave-end="opacity-0 scale-95"
+            x-show="MenuIsOpen"
+            @click.away="MenuIsOpen = false"
+            x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform -translate-x-full"
+            x-transition:enter-end="opacity-100 transform translate-x-0"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 transform translate-x-0"
+            x-transition:leave-end="opacity-0 transform -translate-x-full"
+
 
             >
 
@@ -190,7 +194,7 @@
                         </text>
                     </g><text font-family="Inconsolata-Regular_SemiBold, Inconsolata, monospace" font-size="18" x="30"
                         y="-0" class="font-bold fill-current text-md text-success">
-                        <tspan x="30" y="18">{{ site_name }}</tspan>
+                        <tspan x="30" y="18">{{ site:name }}</tspan>
                     </text>
                 </svg>
 
@@ -198,12 +202,12 @@
         </li>
     </ul>
     <ul class="flex flex-col items-end mt-4">
-        {{ nav include_home="false" }}
+        {{ nav:main_nav include_home="false" }}
         <li class="mb-2">
             <a href="{{ url }}" {{ if is_current }} class="text-success" {{ /if }}>
                 {{ title }}
             </a>
         </li>
-        {{ /nav }}
+        {{ /nav:main_nav }}
     </ul>
 </div>
