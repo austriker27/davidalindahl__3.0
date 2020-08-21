@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ if meta_title }}{{ meta_title }}{{ else }}{{ title ensure_right=" - " }}{{ site_name }}{{ /if }}</title>
+        <title>{{ if site_settings:meta_title }}{{ site_settings:meta_title }}{{ else }}{{ title ensure_right=" - " }}{{ site_name }}{{ /if }}</title>
         <meta property="og:title"
-            content="{{ if meta_title }}{{ meta_title }}{{ else }}{{ title ensure_right=" - " }}{{ site_name }}{{ endif }}" />
+            content="{{ if site_settings:meta_title }}{{ site_settings:meta_title }}{{ else }}{{ title ensure_right=" - " }}{{ site_name }}{{ endif }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ site_url | remove_right:/ }}{{ url }}" />
         <meta property="og:image"
