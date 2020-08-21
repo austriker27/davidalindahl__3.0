@@ -20,6 +20,7 @@ module.exports = {
               'success': '#F1F5F9', // off white thing
               'background': '#181527', // deep blue
               'surface': '#35314e', // lighter deep blue
+              'muted': '#9483aa', // muted for text copy/links
           }
     },
   },
