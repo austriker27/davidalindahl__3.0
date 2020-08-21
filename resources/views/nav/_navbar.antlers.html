@@ -141,15 +141,18 @@
 
                     Menu open: "block", Menu closed: "hidden"
                   -->
-                <div class="md:hidden" x-show="MenuIsOpen"
-                    @click.away="MenuIsOpen = false">
+                <div
+                    class="md:hidden"
+                    x-show="MenuIsOpen"
+
+                    >
                     <div class="">
                         <!-- Mobile menu button -->
                         <button
                             class="inline-flex items-center justify-center p-2 text-gray-400"
                             @click="MenuIsOpen = false" aria-label="Main menu" aria-expanded="false">
                             <p class="text-xs lowercase italics">
-                                close >>
+                                << close menu
                             </p>
                             {{# <svg :class="{'block': MenuIsOpen, 'hidden': !MenuIsOpen }" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />

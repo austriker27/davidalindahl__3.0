@@ -16,12 +16,12 @@ sections:
           listable: hidden
           display: Description
       -
-        handle: url
+        handle: project_url
         field:
           type: link
           localizable: false
           listable: hidden
-          display: Url
+          display: 'Project Url'
       -
         handle: start_date
         field:

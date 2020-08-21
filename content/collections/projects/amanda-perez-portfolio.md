@@ -8,7 +8,8 @@ project_tags:
   - c41c6c9f-42fd-4bfe-939e-838e5a8d97ac
 featured: true
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1597972717
+updated_at: 1598025357
 url: 'https://iamamandaperez.com/'
+project_url: 'https://iamamandaperez.com/'
 id: acb5be5f-6442-43b2-ab56-33fa5144eaed
 ---

@@ -33,14 +33,12 @@
         header_type="h2"
     }}
     <p>Just a smattering of my favorite projects:</p>
-    <div class="flex flex-wrap -mx-4">
-        {{ collection:projects featured:exists="true" sort="date:asc|title:desc" }}
+    {{ collection:projects featured:exists="true" sort="date:asc|title:desc" }}
 
-            {{ partial:projects/project_card }}
+    {{ partial:projects/project_card }}
 
-        {{ /collection:projects }}
+    {{ /collection:projects }}
 
-    </div>
     {{ partial:components/button
         text="See All"
         url="/projects"
@@ -52,19 +50,16 @@
     }}
     <p>Some side projects that were the bee's knees, at least I thought so.</p>
 
-    <div class="flex flex-wrap -mx-4">
-        {{ collection:side_projects featured:exists="true" sort="date:asc|title:desc" }}
+    {{ collection:side_projects featured:exists="true" sort="date:asc|title:desc" }}
 
-            {{ partial:projects/project_card }}
+    {{ partial:projects/project_card }}
 
-        {{ /collection:side_projects }}
+    {{ /collection:side_projects }}
 
-    </div>
     {{ partial:components/button
         text="See All"
         url="/side-projects"
     }}
-
 </div>
 
 <div class="my-3">
@@ -76,19 +71,19 @@
             }}
 
             {{ collection:employers sort="date:asc" }}
-                <div class="mb-4">
-                    {{ if employer_url }}
-                        <a class="text-sm text-success" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
-                    {{ else }}
-                        <p class="text-sm text-success"> {{ employer_name | lower }} </p>
-                    {{ /if }}
 
-                    <p class="text-sm text-success">{{ job_roles | lower }}</p>
+            {{ if employer_url }}
+            <a class="text-sm text-success" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
+            {{ else }}
+            <p class="text-sm text-success"> {{ employer_name | lower }} </p>
+            {{ /if }}
 
-                    <p class="text-xs opacity-75 text-muted">
-                        {{ start_date }} to {{ end_date }}
-                    </p>
-                </div>
+            <p class="text-sm text-success">{{ job_roles | lower }}</p>
+
+            <p class="text-xs opacity-75 text-muted">
+                {{ start_date }} to {{ end_date }}
+            </p>
+
             {{ /collection:employers }}
         </div>
 
@@ -99,17 +94,17 @@
             }}
 
             {{ collection:presentations }}
-            <div class="mb-4">
-                {{ if url }}
-                <a class="text-sm text-success" href="{{ url }}"> {{ title }} </a>
-                {{ else }}
-                <p class="text-sm text-success"> {{ title }} </p>
-                {{ /if }}
 
-                <p class="text-xs opacity-75 text-muted">
-                    {{ date }}
-                </p>
-            </div>
+            {{ if url }}
+            <a class="text-sm text-success" href="{{ url }}"> {{ title }} </a>
+            {{ else }}
+            <p class="text-sm text-success"> {{ title }} </p>
+            {{ /if }}
+
+            <p class="text-xs opacity-75 text-muted">
+                {{ date }}
+            </p>
+
             {{ /collection:presentations }}
         </div>
 
@@ -120,13 +115,13 @@
             }}
 
             {{ collection:accolades sort="date:asc" }}
-                <div class="mb-4">
-                    <p class="text-sm text-success"> {{ title }} </p>
 
-                    <p class="text-xs opacity-75 text-muted">
-                        {{ date }}
-                    </p>
-                </div>
+            <p class="text-sm text-success"> {{ title }} </p>
+
+            <p class="text-xs opacity-75 text-muted">
+                {{ date }}
+            </p>
+
             {{ /collection:accolades }}
         </div>
 

@@ -8,6 +8,8 @@ project_tags:
   - 02a7ff12-8615-4d0a-a411-9c0aa8e71d52
   - c41c6c9f-42fd-4bfe-939e-838e5a8d97ac
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1596755300
+updated_at: 1598025372
+project_url: 'https://hotfusion.net/'
+featured: false
 id: a74c9d38-8674-4c49-adac-457693231b56
 ---

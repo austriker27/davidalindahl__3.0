@@ -2,7 +2,7 @@ title: Articles
 template: articles/show
 layout: layout
 revisions: false
-route: '/posts/{slug}'
+route: '/wrote/{slug}'
 sort_dir: asc
 date_behavior:
   past: public
