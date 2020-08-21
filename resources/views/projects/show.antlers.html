@@ -20,6 +20,7 @@
     {{ partial:components/button
         text="View Resume"
         url="https://austriker27.github.io/resume/"
+        is_external="true"
     }}
 </div>
 
@@ -33,7 +34,7 @@
         header_type="h2"
     }}
     <p>Just a smattering of my favorite projects:</p>
-    {{ collection:projects featured:exists="true" sort="date:asc|title:desc" }}
+    {{ collection:projects featured:exists="true" sort="date:asc|title:desc" side_project:is="false" }}
 
     {{ partial:projects/project_card }}
 
@@ -50,7 +51,7 @@
     }}
     <p>Some side projects that were the bee's knees, at least I thought so.</p>
 
-    {{ collection:side_projects featured:exists="true" sort="date:asc|title:desc" }}
+    {{ collection:side_projects featured:exists="true" sort="date:asc|title:desc" side_project:is="true" }}
 
     {{ partial:projects/project_card }}
 

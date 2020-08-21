@@ -27,10 +27,15 @@ sections:
       -
         handle: about_text
         field:
-          type: textarea
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: true
+          type: markdown
           localizable: false
           listable: hidden
-          display: 'About text'
+          display: 'About Text'
   sidebar:
     display: Sidebar
     fields:

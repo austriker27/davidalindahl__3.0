@@ -2,20 +2,20 @@
     <p class="text-indigo-900 ">{{ banner }}</p>
 </div>
 
-<div class="my-3">
+<div class="my-3 leading-loose md:my-6">
     {{ partial:text/headers
-        text=title
+        text="David A. Lindahl"
         header_type="h1"
     }}
-    <p> {{ subtitle }} </p>
+    <p class="mb-2"> {{ subtitle }} </p>
 </div>
 
-<div class="my-3">
+<div class="my-3 leading-loose md:my-6">
     {{ partial:text/headers
         text="About"
         header_type="h2"
     }}
-    <p>{{ about_text }}</p>
+    <p class="mb-2">{{ about_text }}</p>
 
     {{ partial:components/button
         text="View Resume"
@@ -23,18 +23,82 @@
     }}
 </div>
 
-<div class="my-3">
+<div class="flex flex-wrap w-full my-3 -mx-4 md:my-6">
+    <div class="w-full px-4 sm:w-1/2">
+        {{ partial:text/headers
+            text="Contact"
+            header_type="h4"
+        }}
+        <p class="my-2">Me, elsewhere online:</p>
+
+        {{# {{ collection:contact_links }}
+            <div class="mb-4">
+                <p class="mb-2">{{ title }}</p>
+                <a href=""></a>
+            </div>
+        {{ /collection:contact_links }} #}}
+
+        <div class="my-2">
+            <p class="font-semibold text-secondary"> Lengthy Love Letters (click/tap below) 💌</p>
+            <a href="mailto:davidalindahl@hey.com"
+                >davidalindahl@hey.com</a>
+        </div>
+        <div class="my-2">
+            <p class="font-semibold text-secondary">Quick Quibs 🐦</p>
+            <a target="_blank" href="https://twitter.com/austriker27/"
+                >https://twitter.com/austriker27/</a>
+        </div>
+        <div class="my-2">
+            <p class="font-semibold text-secondary">Caverns of Code 👨‍💻</p>
+            <a target="_blank" href="https://github.com/austriker27/"
+                >https://github.com/austriker27/</a>
+        </div>
+        <div class="my-2">
+            <p class="font-semibold text-secondary">Design Dabbles 🎨 </p>
+            <a target="_blank" href="https://dribbble.com/austriker"
+                >https://dribbble.com/austriker</a>
+        </div>
+        <div class="my-2">
+            <p class="font-semibold text-secondary">Pretty Pictures 📷 </p>
+            <a target="_blank" href="https://instagram.com/austriker27"
+                >https://instagram.com/austriker27/</a>
+        </div>
+        <div class="my-2">
+            <p class="font-semibold text-secondary">Profesh Profile 💼</p>
+            <a target="_blank" href="https://www.linkedin.com/in/davidalindahl/"
+                >https://linkedin.com/in/davidalindahl/</a>
+        </div>
+    </div>
+    <div class="w-full px-4 sm:w-1/2">
+        {{ partial:text/headers
+            text="Things I use"
+            header_type="h4"
+        }}
+        <div class="flex flex-wrap mt-4">
+
+            {{ collection:project_tags as tag}}
+
+            {{ partial:projects/project_tag
+                :title=tag:title
+            }}
+
+            {{ /collection:project_tags }}
+        </div>
+    </div>
+</div>
+
+<div class="my-3 md:my-6">
     {{ partial:quote-block }}
 </div>
 
-<div class="my-3">
+<div class="my-3 md:my-6">
     {{ partial:text/headers
         text="Portfolio"
         header_type="h2"
     }}
-    <p>Just a smattering of my favorite projects:</p>
+    <p class="mb-2">Just a smattering of my favorite projects:</p>
     <div class="flex flex-wrap -mx-4">
-        {{ collection:projects featured:exists="true" sort="date:asc|title:desc" }}
+        {{ collection:projects featured:exists="true" sort="date:asc|title:desc" side_project:is="false" }}
 
             {{ partial:projects/project_card }}
 
@@ -50,14 +114,14 @@
         text="Side Projects"
         header_type="h2"
     }}
-    <p>Some side projects that were the bee's knees, at least I thought so.</p>
+    <p class="mb-2">Some side projects that were the bee's knees, at least I thought so.</p>
 
     <div class="flex flex-wrap -mx-4">
-        {{ collection:side_projects featured:exists="true" sort="date:asc|title:desc" }}
+        {{ collection:projects featured:exists="true" sort="date:asc|title:desc" side_project:is="true" }}
 
             {{ partial:projects/project_card }}
 
-        {{ /collection:side_projects }}
+        {{ /collection:projects }}
 
     </div>
     {{ partial:components/button
@@ -67,7 +131,7 @@
 
 </div>
 
-<div class="my-3">
+<div class="my-3 leading-loose md:my-6">
     <div class="flex flex-col flex-wrap sm:flex-row">
         <div class="flex flex-col w-full sm:w-1/3">
             {{ partial:text/headers

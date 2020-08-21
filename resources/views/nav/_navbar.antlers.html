@@ -12,8 +12,8 @@
         {{# :class="{'fixed top-0 left-0 w-64 h-full ': MenuIsOpen }" #}}
 
         <div class="flex items-center justify-between" >
-            <a href="/" class="h-6">
-                <svg xmlns="http://www.w3.org/2000/svg" width="175px" class="h-6">
+            <a href="/" class="flex w-full h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="175px" class="flex w-full h-6">
                     <g>
                         <path
                             d="M2.6,12.5c0-5.1,4.2-9.4,9.4-9.4l0,0V0.5c-3,0-5.6,1-7.8,2.9c-5,4.4-5.5,11.9-1.2,16.9l2-1.7 C3.5,17,2.6,14.8,2.6,12.5z"
@@ -99,20 +99,17 @@
         <div
             class="fixed top-0 left-0 w-64 h-full border-solid md:hidden border-b-1 border-success bg-background"
             x-show="MenuIsOpen"
-            @click.away="MenuIsOpen = false"
             x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 transform -translate-x-full"
             x-transition:enter-end="opacity-100 transform translate-x-0"
             x-transition:leave="transition ease-in duration-300"
             x-transition:leave-start="opacity-100 transform translate-x-0"
             x-transition:leave-end="opacity-0 transform -translate-x-full"
-
-
             >
 
             <div class="flex flex-col justify-between p-6">
-                <a href="/" class="h-6 pl-2 mb-10">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="175px" class="h-6">
+                <a href="/" class="w-full h-6 pl-2 mb-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-6">
                         <g>
                             <path
                                 d="M2.6,12.5c0-5.1,4.2-9.4,9.4-9.4l0,0V0.5c-3,0-5.6,1-7.8,2.9c-5,4.4-5.5,11.9-1.2,16.9l2-1.7 C3.5,17,2.6,14.8,2.6,12.5z"
@@ -143,14 +140,15 @@
                   -->
                 <div
                     class="md:hidden"
-                    x-show="MenuIsOpen"
-
                     >
                     <div class="">
                         <!-- Mobile menu button -->
                         <button
                             class="inline-flex items-center justify-center p-2 text-gray-400"
-                            @click="MenuIsOpen = false" aria-label="Main menu" aria-expanded="false">
+                            @click="MenuIsOpen = false"
+                            aria-label="Main menu"
+                            aria-expanded="false"
+                            >
                             <p class="text-xs lowercase italics">
                                 << close menu
                             </p>
@@ -159,7 +157,7 @@
                                             </svg> #}}
                         </button>
                         {{ nav include_home="false" }}
-                        <a class="block px-2 py-1 text-xs font-medium text-white transition duration-150 ease-in-out focus:text-white focus:bg-gray-700"
+                        <a class="block px-2 py-1 text-xs font-medium transition duration-150 ease-in-out text-muted focus:text-white focus:bg-gray-700"
                             href="{{ url }}" {{ if is_current }}
                             class="block p-2 text-xs font-medium transition duration-150 ease-in-out focus:text-white focus:bg-gray-700 text-success"
                             {{ /if }}>
@@ -178,8 +176,8 @@
 <div class="hidden w-64 md:inline-block">
     <ul class="flex justify-end">
         <li class="flex items-center h-16">
-            <a href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" width="175px" height="35px">
+            <a href="/" class="w-full h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-full h-6" height="35px">
                     <g>
                         <path
                             d="M2.6,12.5c0-5.1,4.2-9.4,9.4-9.4l0,0V0.5c-3,0-5.6,1-7.8,2.9c-5,4.4-5.5,11.9-1.2,16.9l2-1.7 C3.5,17,2.6,14.8,2.6,12.5z"

@@ -14,12 +14,13 @@ a {
 h1, h2, h3, h4, h5 {
     @apply text-primary;
     @apply font-bold;
+    @apply mb-2;
 }
 
 h1::before, h2::before, h3::before, h4::before, h5::before {
     content: '→';
     @apply text-surface;
-    margin-right: 8px;
+    margin-right: 4px;
 }
 
 h1::after, h2::after, h3::after, h4::after, h5::after {

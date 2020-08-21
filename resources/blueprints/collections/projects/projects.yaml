@@ -81,3 +81,10 @@ sections:
           localizable: false
           listable: hidden
           display: Featured
+      -
+        handle: side_project
+        field:
+          type: toggle
+          localizable: false
+          listable: hidden
+          display: 'Side Project'

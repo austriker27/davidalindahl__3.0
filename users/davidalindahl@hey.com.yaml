@@ -9,3 +9,9 @@ preferences:
         - featured
         - title
         - description
+    projects:
+      columns:
+        - title
+        - slug
+        - side_project
+        - featured

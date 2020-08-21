@@ -4,5 +4,8 @@ data:
   meta_description: 'Front end wiz kid'
   header_scripts:
     -
-      description: test
-      code: '''use fathom'''
+      description: 'fathom code'
+      code: |
+        <!-- Fathom - beautiful, simple website analytics -->
+        <script src="https://loon.davidalindahl.com/script.js" site="ALOHVAQX" defer></script>
+        <!-- / Fathom -->
