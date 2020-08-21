@@ -2,10 +2,12 @@
     <div class="flex flex-col h-full p-4 transition-all duration-300 ease-in shadow-none bg-surface hover:shadow-bright hover:pointer">
         <div class="flex flex-col">
             <div class="flex text-xs opacity-50 text-success">
+
                 {{ if end_date }}
-                <div class="">{{ start_date format="Y-m-d" }}</div>
+                <div class="">{{ start_date format="Y" }} </div>
                 <div class=""> - </div>
-                <div class="">{{ end_date format="Y-m-d" }}</div>
+                <div class=""> {{ end_date format="Y" }}</div>
+
                 {{ else }}
                 <div class="">{{ start_date format="Y" }}</div>
                 {{ /if }}
@@ -28,13 +30,13 @@
         </div>
         <div class="flex flex-wrap mt-4 text-transparent bg-clip-text gradient-to-br from-primary via-secondary to-surface">
 
-            {{ collection:project_tags as tag}}
+            {{ project_tags as tag}}
 
                 {{ partial:projects/project_tag
                     :title=tag:title
                 }}
 
-            {{ /collection:project_tags }}
+            {{ /project_tags }}
         </div>
     </div>
 </div>
