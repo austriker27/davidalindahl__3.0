@@ -46,3 +46,13 @@ p {
     @apply text-white;
     @apply text-base;
 }
+
+ul {
+    @apply text-white;
+    @apply text-base;
+}
+
+li {
+    @apply text-white;
+    @apply text-base;
+}

@@ -1,10 +1,12 @@
 ---
 title: Writing
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1596836826
+updated_at: 1598043143
 template: articles/index
 blueprint: pages
 bard:
+  -
+    type: paragraph
   -
     type: paragraph
   -
