@@ -1,6 +1,17 @@
 module.exports = {
   purge: [],
   theme: {
+      backgroundImage: {
+          'gradient-to-t': 'linear-gradient(to top, var(--gradient-color-stops))',
+          'gradient-to-tr': 'linear-gradient(to top right, var(--gradient-color-stops))',
+          'gradient-to-r': 'linear-gradient(to right, var(--gradient-color-stops))',
+          'gradient-to-br': 'linear-gradient(to bottom right, var(--gradient-color-stops))',
+          'gradient-to-b': 'linear-gradient(to bottom, var(--gradient-color-stops))',
+          'gradient-to-bl': 'linear-gradient(to bottom left, var(--gradient-color-stops))',
+          'gradient-to-l': 'linear-gradient(to left, var(--gradient-color-stops))',
+          'gradient-to-tl': 'linear-gradient(to top left, var(--gradient-color-stops))',
+      },
+      gradientColorStops: (theme) => theme('colors'),
     extend: {
           fontSize: {
               '7xl': '5rem',
@@ -26,6 +37,9 @@ module.exports = {
   },
   variants: {
       textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+      backgroundClip: ['responsive', 'hover', 'focus'],
+      backgroundImage: ['responsive'],
+      gradientColorStops: ['responsive', 'hover', 'focus'],
   },
   plugins: [
       require('@tailwindcss/ui')({

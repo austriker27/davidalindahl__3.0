@@ -1,27 +1,29 @@
-<div class="flex flex-col shadow-xl p-4 my-2 bg-surface">
+<div class="flex flex-col w-full p-4 my-2 shadow-xl bg-surface md:w-1/2">
     <div class="flex flex-col">
-        <div class="flex opacity-50 text-xs text-success">
+        <div class="flex text-xs opacity-50 text-success">
             <div class="css-1g9vbbl">{{ start_date }}</div>
             {{ if end_date }}
             <div class="css-m9dm0d"> - </div>
             <div class="css-1g9vbbl">{{ end_date }}</div>
             {{ /if }}
         </div>
-        <div class="mt-4 flex flex-col items-start">
-            <p class="text-2xl text-success">
+        <div class="flex flex-col items-start mt-4">
+            <p class="text-xl text-success">
                 {{ if url }}
-                <a class="text-success font-semibold" target="_blank" href={{ url }} >
+                <a class="font-semibold text-success" target="_blank" href={{ url }} >
                     {{ title }}
                 </a>
                 {{ else }}
                     {{ title }}
                 {{ /if }}
             </p>
+            {{ if url }}
             <a href={{ url }} target="_blank" class="text-xs underline"> {{ url }} </a>
+            {{ /if }}
             <p class="text-xs"> {{ description }} </p>
         </div>
     </div>
-    <div class="flex flex-wrap mt-4">
+    <div class="flex flex-wrap mt-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
         {{ collection:project_tags }}
 
         {{ partial:projects/project_tag

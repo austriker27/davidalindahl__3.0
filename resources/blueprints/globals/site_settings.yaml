@@ -1,0 +1,105 @@
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: meta_title
+        field:
+          type: text
+      -
+        handle: meta_description
+        field:
+          type: text
+      -
+        handle: meta_image
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          localizable: false
+          listable: hidden
+          display: 'Meta Image'
+      -
+        handle: website_favicon
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          localizable: false
+          listable: hidden
+          display: 'Website Favicon'
+      -
+        handle: apple_touch_icon
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          localizable: false
+          listable: hidden
+          display: 'Apple Touch Icon'
+  header_scripts:
+    display: 'Header Scripts'
+    fields:
+      -
+        handle: header_scripts
+        field:
+          fields:
+            -
+              handle: description
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Description
+            -
+              handle: code
+              field:
+                type: textarea
+                localizable: false
+                listable: hidden
+                display: Code
+          mode: table
+          add_row: 'Add row'
+          reorderable: true
+          type: grid
+          instructions: 'Add meta tags, code, and/or scripts to the `<head>` area of your site.'
+          localizable: false
+          listable: hidden
+          display: 'Header Scripts'
+  footer_scripts:
+    display: 'Footer Scripts'
+    fields:
+      -
+        handle: footer_scripts
+        field:
+          fields:
+            -
+              handle: description
+              field:
+                input_type: text
+                type: text
+                localizable: false
+                listable: hidden
+                display: Description
+            -
+              handle: code
+              field:
+                type: textarea
+                localizable: false
+                listable: hidden
+                display: Code
+          mode: table
+          add_row: 'Add row'
+          reorderable: true
+          type: grid
+          instructions: 'Add stuff right before closing `</body>` area of your site.'
+          localizable: false
+          listable: hidden
+          display: 'Footer Scripts'

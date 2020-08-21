@@ -147,9 +147,8 @@
                         <!-- Mobile menu button -->
                         <button
                             class="inline-flex items-center justify-center p-2 text-gray-400"
-                            @click="MenuIsOpen = true" aria-label="Main menu" aria-expanded="false">
-                            <p class="text-xs lowercase italics"
-                                @click="MenuIsOpen = false">
+                            @click="MenuIsOpen = false" aria-label="Main menu" aria-expanded="false">
+                            <p class="text-xs lowercase italics">
                                 close >>
                             </p>
                             {{# <svg :class="{'block': MenuIsOpen, 'hidden': !MenuIsOpen }" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

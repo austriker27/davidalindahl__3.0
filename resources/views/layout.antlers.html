@@ -11,21 +11,27 @@
         <meta property="og:url" content="{{ site_url | remove_right:/ }}{{ url }}" />
         <meta property="og:image"
             content="{{ site_url | remove_right:/ }}{{ if assets:meta_image }}{{ assets:meta_image }}{{ url }}{{ /assets:meta_image }} {{ else }}{{ assets:global_meta_image }}{{ url }}{{ /assets:global_meta_image }}{{/if}}" />
-        {{ assets:website_favicon }}
-        <link rel="icon" type="image/png" href="{{ url }}">
-        {{ /assets:website_favicon }}
-        {{ assets:website_touch_icon }}
-        <link rel="apple-touch-icon" href="{{ url }}">
-        {{ /assets:website_touch_icon }}
+
+
+        {{ if site_settings:website_favicon }}
+            {{ site_settings:website_favicon }}
+            <link rel="icon" type="image/png" href="{{ url }}">
+            {{ /site_settings:website_favicon }}
+        {{ /if }}
+
+        {{ if site_settings:apple_touch_icon }}
+            <link rel="apple-touch-icon" href="{{ url }}">
+        {{ /if }}
+
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         <script src="{{ mix src='/js/site.js' }}"></script>
 
 
-        {{ if head_scripts }}
+        {{ if site_settings:header_scripts }}
         <!-- Custom Head Scripts -->
-        {{ head_scripts }}
-        {{ code }}
-        {{ /head_scripts }}
+        {{ site_settings:header_scripts }}
+            {{ code }}
+        {{ /site_settings:header_scripts }}
         <!-- End Custom Head Scripts -->
         {{ /if }}
 
@@ -48,4 +54,14 @@
             </div>
         </main>
     </body>
+
+    {{# {{ partial:footer }} #}}
+
+    {{ if site_settings:footer_scripts }}
+    <!-- Custom Footer Scripts -->
+    {{ site_settings:footer_scripts }}
+    {{ code }}
+    {{ /site_settings:footer_scripts }}
+    <!-- End Custom Footer Scripts -->
+    {{ /if }}
 </html>

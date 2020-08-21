@@ -2,4 +2,7 @@ title: 'Site Settings'
 data:
   meta_title: 'David A. Lindahl'
   meta_description: 'Front end wiz kid'
-  website_favicon: favicon/favicon.ico
+  header_scripts:
+    -
+      description: test
+      code: '''use fathom'''
