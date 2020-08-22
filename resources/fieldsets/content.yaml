@@ -37,7 +37,7 @@ fields:
           display: Image
           fields:
             -
-              handle: assets
+              handle: image
               field:
                 mode: grid
                 restrict: false
@@ -46,7 +46,7 @@ fields:
                 type: assets
                 localizable: false
                 listable: hidden
-                display: Assets
+                display: Image
             -
               handle: width
               field:

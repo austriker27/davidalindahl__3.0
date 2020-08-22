@@ -1,6 +1,0 @@
-title: 'Side Projects'
-template: side_projects/show
-revisions: false
-date_behavior:
-  past: public
-  future: private

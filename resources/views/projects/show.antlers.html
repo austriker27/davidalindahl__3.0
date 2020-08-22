@@ -51,11 +51,11 @@
     }}
     <p>Some side projects that were the bee's knees, at least I thought so.</p>
 
-    {{ collection:side_projects featured:exists="true" sort="date:asc|title:desc" side_project:is="true" }}
+    {{ collection:projects featured:exists="true" sort="date:asc|title:desc" side_project:is="true" }}
 
     {{ partial:projects/project_card }}
 
-    {{ /collection:side_projects }}
+    {{ /collection:projects }}
 
     {{ partial:components/button
         text="See All"
