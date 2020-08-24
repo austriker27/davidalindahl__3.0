@@ -11,6 +11,8 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 
 ### general:
 - [x] : More epic hover states (underline bottom border on hover?)
+- [ ] : add favicon
+- [ ] : add social media meta ogg tags/image
 - [ ] : fix multiline hover states
 - [ ] : add page for "design" work (apparel design and that design.davidalindahl.com page)
 - [ ] : improve footer and hover states
@@ -24,8 +26,11 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 - [ ] : fix hover transition on project card component
 
 ### articles: 
-- [ ] : Add read time to article
+- [ ] : add read time and word count to article
 - [ ] : use `truncate` modifier to add brief description to article cards on index
+- [ ] : add caption below images
+- [ ] : add gif support to single_image component
+- [ ] : get image gallery component working
 
 ### content:
 - [ ] : add projects

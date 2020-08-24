@@ -1,0 +1,44 @@
+<div class="py-8">
+
+    {{ if width == "page" }}
+    <div class="w-full h-auto">
+        {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+        {{ if caption }}
+        <p class="text-xs italics text-muted"> {{ caption }} </p>
+        {{ /if }}
+    </div>
+
+    {{ /if }}
+
+    {{ if width == "container" }}
+    <div class="container mx-auto">
+        <div class="w-full h-auto">
+            {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+        </div>
+        {{ if caption }}
+        <p class="text-xs italics text-muted"> {{ caption }} </p>
+        {{ /if }}
+    </div>
+    {{ /if }}
+
+</div>
+
+{{# <div class="py-8 bg-white">
+    {{ if width == "page" }}
+    <div class="w-full h-auto">
+        {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+    </div>
+
+    {{ /if }}
+
+    {{ if width == "container" }}
+    <div class="container mx-auto">
+        <div class="w-full h-auto">
+            {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+        </div>
+    </div>
+    {{ /if }}
+</div>
+#}}
+
+

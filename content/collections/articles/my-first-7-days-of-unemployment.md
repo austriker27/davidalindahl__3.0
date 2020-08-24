@@ -6,7 +6,7 @@ article_tags:
   - ab2e7de2-fbd8-4cc0-a275-4df95ac2313a
   - ef371a1f-adb2-4a50-8e20-44df7c86701d
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1596843032
+updated_at: 1598304039
 cover_image: articles/first-7-days-unemployment/let-jack-in.png
 id: dc20dee9-827d-439b-956c-1bf1c786cfaf
 content:
@@ -32,9 +32,10 @@ content:
     type: set
     attrs:
       values:
-        type: image
+        type: single_image
         assets: articles/first-7-days-unemployment/let-jack-in.png
-        width: Container
+        width: container
+        single_image: articles/first-7-days-unemployment/let-jack-in.png
   -
     type: paragraph
   -
@@ -49,9 +50,10 @@ content:
     type: set
     attrs:
       values:
-        type: image
+        type: single_image
         assets: articles/first-7-days-unemployment/im-speechless.png
-        width: Container
+        width: container
+        single_image: articles/first-7-days-unemployment/im-speechless.png
   -
     type: paragraph
   -
@@ -70,9 +72,10 @@ content:
     type: set
     attrs:
       values:
-        type: image
+        type: single_image
         assets: articles/first-7-days-unemployment/button-hover.gif
-        width: Container
+        width: container
+        single_image: articles/first-7-days-unemployment/button-hover.gif
   -
     type: paragraph
   -
@@ -90,9 +93,10 @@ content:
     type: set
     attrs:
       values:
-        type: image
+        type: single_image
         assets: articles/first-7-days-unemployment/330alarm.jpg
-        width: Container
+        width: container
+        single_image: articles/first-7-days-unemployment/330alarm.jpg
   -
     type: paragraph
   -
@@ -109,9 +113,10 @@ content:
     type: set
     attrs:
       values:
-        type: image
+        type: single_image
         assets: articles/first-7-days-unemployment/rw-ig-live.png
-        width: Container
+        width: container
+        single_image: articles/first-7-days-unemployment/rw-ig-live.png
   -
     type: paragraph
   -
@@ -123,15 +128,34 @@ content:
   -
     type: paragraph
   -
+    type: paragraph
+  -
     type: set
     attrs:
       values:
-        type: image_gallery
-        images:
-          - articles/first-7-days-unemployment/rw-live-btw-1.jpg
-          - articles/first-7-days-unemployment/rw-live-btw-2.jpg
-          - articles/first-7-days-unemployment/rw-live-btw-3.jpg
-          - articles/first-7-days-unemployment/rw-live-btw-4.jpg
+        type: single_image
+        single_image: articles/first-7-days-unemployment/rw-live-btw-1.jpg
+        width: container
+  -
+    type: paragraph
+  -
+    type: set
+    attrs:
+      values:
+        type: single_image
+        single_image: articles/first-7-days-unemployment/rw-live-btw-2.jpg
+        width: container
+  -
+    type: paragraph
+  -
+    type: set
+    attrs:
+      values:
+        type: single_image
+        single_image: articles/first-7-days-unemployment/rw-live-btw-3.jpg
+        width: container
+  -
+    type: paragraph
   -
     type: paragraph
   -
@@ -144,6 +168,7 @@ content:
           Okay I mentioned 2 livestreams. My first attempt at going "live" was last Thursday and I was quite nervous. Via RW, I'd been talking with a local author who wrote a book about a woman who wants to be the first woman to summit Rainier and she had sent me some signed copies to give away. So I decided to do a live unboxing of the boxes! What could go wrong?! Besides the first stream not uploaded/saved and me sitting in a pool of water it was a success! And because I didn't upload or save it correctly no one will ever know. So I filmed another take and you can see it [here](https://www.instagram.com/tv/CAMOKT3AAd4/).
           
           I'm stoked to help out Jamie, the local author and you should definitely check out her [website](https://jamiemcgillen.com/) and book!
+          
   -
     type: paragraph
   -
@@ -160,9 +185,11 @@ content:
     type: set
     attrs:
       values:
-        type: image
-        assets: articles/first-7-days-unemployment/buncha-weirdos.png
-        width: Container
+        type: single_image
+        single_image: articles/first-7-days-unemployment/buncha-weirdos.png
+        width: container
+  -
+    type: paragraph
   -
     type: paragraph
   -
@@ -174,15 +201,17 @@ content:
           I joined a webring! Remember webrings and geocities and the early days of the Internet in the 90s? Yeah me neither. But Jack swears they were a thing and so he started a webring to keep the web weird. When I saw it Monday (before actually meeting him), I joined up! Gotta keep things weird! Check out the whole ring [here](https://weirdwidewebring.net/)
           
           Also remarkably there's a lot of people interested in weird things it would appear. Here's my web traffic:
+          
   -
     type: paragraph
   -
     type: set
     attrs:
       values:
-        type: image
+        type: single_image
         assets: articles/first-7-days-unemployment/fathom-www.png
-        width: Container
+        width: container
+        single_image: articles/first-7-days-unemployment/fathom-www.png
   -
     type: paragraph
   -
@@ -213,6 +242,7 @@ content:
           
           
           ## **_So who is in the market for an epic website handcrafted with lots of tender love, and care?_**
+          
   -
     type: paragraph
 ---
