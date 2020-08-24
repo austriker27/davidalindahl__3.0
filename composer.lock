@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "324905e1bffeafd0d658f855a81fb871",
+    "content-hash": "0f661fa691d2489df1128f43911070c5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1434,6 +1434,54 @@
                 "watermark"
             ],
             "time": "2019-11-02T09:15:47+00:00"
+        },
+        {
+            "name": "jonassiewertsen/link-fieldtype",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jonassiewertsen/Link-fieldtype.git",
+                "reference": "1942e7fa0382f2b9c53077d64db5155055bf7dbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jonassiewertsen/Link-fieldtype/zipball/1942e7fa0382f2b9c53077d64db5155055bf7dbb",
+                "reference": "1942e7fa0382f2b9c53077d64db5155055bf7dbb",
+                "shasum": ""
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Link Fieldtype",
+                    "description": "A fieldtype for links"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jonassiewertsen\\LinkFieldtype\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jonassiewertsen\\LinkFieldtype\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonas Siewertsen"
+                }
+            ],
+            "description": "A Statamic fieldtype for links",
+            "keywords": [
+                "fieldtype",
+                "link",
+                "statamic"
+            ],
+            "time": "2019-12-26T23:14:29+00:00"
         },
         {
             "name": "justinrainbow/json-schema",

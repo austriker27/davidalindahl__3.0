@@ -98,7 +98,7 @@
     }}
     <p class="mb-2">Just a smattering of my favorite projects:</p>
     <div class="flex flex-wrap -mx-4">
-        {{ collection:projects featured:exists="true" sort="start_date:asc" side_project:is="false" }}
+        {{ collection:projects featured:exists="true" sort="end_date:asc" side_project:is="false" }}
 
             {{ partial:projects/project_card }}
 
@@ -117,7 +117,7 @@
     <p class="mb-2">Some side projects that were the bee's knees, at least I thought so.</p>
 
     <div class="flex flex-wrap -mx-4">
-        {{ collection:projects featured:exists="true" sort="start_date:asc" side_project:is="true" }}
+        {{ collection:projects featured:exists="true" sort="end_date:asc" side_project:is="true" }}
 
             {{ partial:projects/project_card }}
 

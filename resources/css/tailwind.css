@@ -6,9 +6,38 @@
 
 @import "tailwindcss/utilities";
 
+/* fancy gradient over that fills on hover but doesnt wrap */
 a {
-    @apply underline;
+  @apply text-muted;
+  text-decoration: none;
+  background-image: linear-gradient(theme('colors.secondary'), theme('colors.secondary')), linear-gradient(
+      theme('colors.muted'),
+      theme('colors.muted')
+    ), linear-gradient(theme('colors.primary'), theme('colors.primary'));
+  background-size: 20px 2px, 100% 2px, 0 2px;
+  background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.35s linear, background-position 0.35s linear;
+}
+a:hover {
+  background-size: 20px 2px, 0 2px, 100% 2px;
+  background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+  @apply text-primary;
+}
+
+
+.link {
     @apply text-muted;
+    @apply border-b;
+    @apply border-muted;
+    @apply transition-colors;
+    @apply duration-200;
+    @apply ease-in;
+}
+
+.link:hover {
+    @apply border-b-2;
+    @apply border-primary;
 }
 
 h1, h2, h3, h4, h5 {
@@ -56,3 +85,4 @@ li {
     @apply text-white;
     @apply text-base;
 }
+

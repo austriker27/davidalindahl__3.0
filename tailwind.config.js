@@ -56,10 +56,13 @@ module.exports = {
   },
   variants: {
       textColor: ['responsive', 'hover', 'focus', 'group-hover'],
+      transitionProperty: ['responsive', 'hover', 'focus'],
       backgroundClip: ['responsive', 'hover', 'focus'],
       backgroundImage: ['responsive'],
       gradientColorStops: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
       boxShadow: ['responsive', 'hover', 'focus', 'group-hover'],
+      backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+      opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
   },
   plugins: [
       require('@tailwindcss/ui')({
