@@ -11,6 +11,7 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 
 ### general:
 - [x] : More epic hover states (underline bottom border on hover?)
+- [ ] : fix multiline hover states
 - [ ] : add page for "design" work (apparel design and that design.davidalindahl.com page)
 - [ ] : improve footer and hover states
 - [ ] : add hyperlinks to the header sections on the homepage (ex `#about`)
@@ -18,6 +19,7 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 
 ### components:
 - [ ] : add target blank to button component
+- [ ] : fix hover transition on project card component
 
 ### articles: 
 - [ ] : Add read time to article
