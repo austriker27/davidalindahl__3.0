@@ -16,6 +16,8 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 - [ ] : improve footer and hover states
 - [ ] : add hyperlinks to the header sections on the homepage (ex `#about`)
 - [ ] : add link fieldtype via : https://github.com/jonassiewertsen/Link-fieldtype
+- [ ] : replace `.bg-img-none` with actual solution (probably use `.link` for link underlines)
+- [ ] : fix navbar logo so its aligned right
 
 ### components:
 - [ ] : add target blank to button component
