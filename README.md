@@ -25,6 +25,7 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 
 ### articles: 
 - [ ] : Add read time to article
+- [ ] : use `truncate` modifier to add brief description to article cards on index
 
 ### content:
 - [ ] : add projects
