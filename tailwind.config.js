@@ -2,7 +2,12 @@ module.exports = {
     future: {
         removeDeprecatedGapUtilities: true,
     },
-  purge: [],
+    purge: {
+        content: [
+            './resources/views/**/*.html',
+            './resources/js/**/*.js',
+        ],
+    },
   theme: {
       backgroundImage: {
           'gradient-to-t': 'linear-gradient(to top, var(--gradient-color-stops))',
@@ -13,7 +18,7 @@ module.exports = {
           'gradient-to-bl': 'linear-gradient(to bottom left, var(--gradient-color-stops))',
           'gradient-to-l': 'linear-gradient(to left, var(--gradient-color-stops))',
           'gradient-to-tl': 'linear-gradient(to top left, var(--gradient-color-stops))',
-          'img-none': 'none'
+          'img-none': 'none',
       },
       gradientColorStops: (theme) => theme('colors'),
         boxShadow: {
@@ -60,7 +65,8 @@ module.exports = {
       transitionProperty: ['responsive', 'hover', 'focus'],
       backgroundClip: ['responsive', 'hover', 'focus'],
       backgroundImage: ['responsive'],
-      gradientColorStops: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+    //   gradientColorStops: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
+      gradientColorStops: ['responsive', 'hover', 'focus'],
       boxShadow: ['responsive', 'hover', 'focus', 'group-hover'],
       backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
       opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],

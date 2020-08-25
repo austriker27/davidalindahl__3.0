@@ -139,9 +139,9 @@
                     Menu open: "block", Menu closed: "hidden"
                   -->
                 <div
-                    class="md:hidden"
+                    class=""
                     >
-                    <div class="">
+                    <div class="flex flex-col items-end">
                         <!-- Mobile menu button -->
                         <button
                             class="inline-flex items-center justify-center p-2 text-gray-400"
@@ -157,12 +157,14 @@
                                             </svg> #}}
                         </button>
                         {{ nav include_home="false" }}
-                        <a class="block px-2 py-1 text-xs font-medium transition duration-150 ease-in-out text-muted focus:text-white focus:bg-gray-700"
-                            href="{{ url }}" {{ if is_current }}
-                            class="block p-2 text-xs font-medium transition duration-150 ease-in-out focus:text-white focus:bg-gray-700 text-success"
-                            {{ /if }}>
-                            {{ title }}
-                        </a>
+                        <div class="inline-block px-2 py-2">
+                            <a class="block text-xs font-medium transition duration-150 ease-in-out link text-muted focus:text-white focus:bg-gray-700"
+                                href="{{ url }}" {{ if is_current }}
+                                class="block p-2 text-xs font-medium transition duration-150 ease-in-out focus:text-white focus:bg-gray-700 text-success"
+                                {{ /if }}>
+                                {{ title }}
+                            </a>
+                        </div>
                         {{ /nav }}
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 ## USES
 - Statamic V3
 - TailwindCSS
-- maybe alpineJS for menu
+- AlpineJS for menu
 - Responsive Image Addon for Statamic
 
 ## About
@@ -16,10 +16,13 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 - [ ] : fix multiline hover states
 - [ ] : add page for "design" work (apparel design and that design.davidalindahl.com page)
 - [ ] : improve footer and hover states
-- [ ] : add hyperlinks to the header sections on the homepage (ex `#about`)
 - [ ] : add link fieldtype via : https://github.com/jonassiewertsen/Link-fieldtype
-- [ ] : replace `.bg-img-none` with actual solution (probably use `.link` for link underlines)
+- [x] : replace `.bg-img-none` with actual solution (probably use `.link` for link underlines)
 - [ ] : fix navbar logo so its aligned right
+
+## homepage
+- [ ] : add hyperlinks to the header sections on the homepage (ex `#about`)
+- [ ] : add something like ` sort="total_results"` to sort the project_tags by frequency
 
 ### components:
 - [ ] : add target blank to button component

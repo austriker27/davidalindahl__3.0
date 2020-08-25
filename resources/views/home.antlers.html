@@ -42,32 +42,32 @@
 
         <div class="my-2">
             <p class="font-semibold text-secondary"> Lengthy Love Letters (click/tap below) 💌</p>
-            <a href="mailto:davidalindahl@hey.com"
+            <a class="link" href="mailto:davidalindahl@hey.com"
                 >davidalindahl@hey.com</a>
         </div>
         <div class="my-2">
             <p class="font-semibold text-secondary">Quick Quibs 🐦</p>
-            <a target="_blank" href="https://twitter.com/austriker27/"
+            <a class="link" target="_blank" href="https://twitter.com/austriker27/"
                 >https://twitter.com/austriker27/</a>
         </div>
         <div class="my-2">
             <p class="font-semibold text-secondary">Caverns of Code 👨‍💻</p>
-            <a target="_blank" href="https://github.com/austriker27/"
+            <a class="link" target="_blank" href="https://github.com/austriker27/"
                 >https://github.com/austriker27/</a>
         </div>
         <div class="my-2">
             <p class="font-semibold text-secondary">Design Dabbles 🎨 </p>
-            <a target="_blank" href="https://dribbble.com/austriker"
+            <a class="link" target="_blank" href="https://dribbble.com/austriker"
                 >https://dribbble.com/austriker</a>
         </div>
         <div class="my-2">
             <p class="font-semibold text-secondary">Pretty Pictures 📷 </p>
-            <a target="_blank" href="https://instagram.com/austriker27"
+            <a class="link" target="_blank" href="https://instagram.com/austriker27"
                 >https://instagram.com/austriker27/</a>
         </div>
         <div class="my-2">
             <p class="font-semibold text-secondary">Profesh Profile 💼</p>
-            <a target="_blank" href="https://www.linkedin.com/in/davidalindahl/"
+            <a class="link" target="_blank" href="https://www.linkedin.com/in/davidalindahl/"
                 >https://linkedin.com/in/davidalindahl/</a>
         </div>
     </div>
@@ -78,7 +78,7 @@
         }}
         <div class="flex flex-wrap mt-4">
 
-            {{ collection:project_tags as tag}}
+            {{ collection:project_tags as tag }}
 
             {{ partial:projects/project_tag
                 :title=tag:title
@@ -144,7 +144,7 @@
             {{ collection:employers sort="date:asc" }}
                 <div class="mb-4">
                     {{ if employer_url }}
-                        <a class="text-sm text-success" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
+                        <a class="text-sm link text-success" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
                     {{ else }}
                         <p class="text-sm text-success"> {{ employer_name | lower }} </p>
                     {{ /if }}
@@ -167,7 +167,7 @@
             {{ collection:presentations }}
             <div class="mb-4">
                 {{ if url }}
-                <a class="text-sm text-success" href="{{ url }}"> {{ title }} </a>
+                <a class="text-sm link text-success" href="{{ url }}"> {{ title }} </a>
                 {{ else }}
                 <p class="text-sm text-success"> {{ title }} </p>
                 {{ /if }}
