@@ -152,7 +152,13 @@
                     <p class="text-sm text-success">{{ job_roles | lower }}</p>
 
                     <p class="text-xs opacity-75 text-muted">
-                        {{ start_date }} to {{ end_date }}
+                        {{ start_date format="Y" }}
+
+                        {{ if end_date }}
+                            to {{ end_date format="Y" }}
+                        {{ else }}
+                            to present
+                        {{ /if }}
                     </p>
                 </div>
             {{ /collection:employers }}
@@ -173,7 +179,7 @@
                 {{ /if }}
 
                 <p class="text-xs opacity-75 text-muted">
-                    {{ date }}
+                    {{ date format="M Y" }}
                 </p>
             </div>
             {{ /collection:presentations }}
@@ -190,7 +196,7 @@
                     <p class="text-sm text-success"> {{ title }} </p>
 
                     <p class="text-xs opacity-75 text-muted">
-                        {{ date }}
+                        {{ date format="Y" }}
                     </p>
                 </div>
             {{ /collection:accolades }}

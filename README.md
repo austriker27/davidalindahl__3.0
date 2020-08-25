@@ -23,12 +23,14 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 ## homepage
 - [ ] : add hyperlinks to the header sections on the homepage (ex `#about`)
 - [ ] : add something like ` sort="total_results"` to sort the project_tags by frequency
+  - possibly use this instead: https://statamic.dev/tags/taxonomy
 
 ### components:
 - [ ] : add target blank to button component
 - [ ] : fix hover transition on project card component
 
 ### articles: 
+- [x] : add importing old articles disclosure
 - [ ] : add read time and word count to article
 - [ ] : use `truncate` modifier to add brief description to article cards on index
 - [ ] : add caption below images
