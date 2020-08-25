@@ -14,7 +14,7 @@
                 <div class="">{{ start_date format="Y" }}</div>
                 {{ /if }}
             </div>
-            <div class="flex flex-col items-start mt-0">
+            <div class="mt-0">
                 {{# {{ if project_url }}
                 <a class="mb-2 text-xl font-semibold text-success hover:text-surface" target="_blank" href={{ project_url }}>
                     {{ title }}
@@ -29,7 +29,9 @@
                     {{ title }}
                 </p>
                 {{ if project_url }}
-                <a href={{ project_url }} target="_blank" class="mb-2 text-xs opacity-75 link text-success group-hover:opacity-100 hover:text-background"> {{ project_url }} </a>
+                <div class="mb-2">
+                    <a href={{ project_url }} target="_blank" class="text-xs opacity-75 link text-success group-hover:opacity-100 hover:text-background"> {{ project_url }} </a>
+                </div>
                 {{ /if }}
                 <p class="text-xs"> {{ description }} </p>
             </div>

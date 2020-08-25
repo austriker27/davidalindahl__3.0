@@ -9,9 +9,9 @@
     {{ /bard }}
 </div>
 
-<div class="flex flex-col flex-wrap -mx-4 md:flex-row">
+<div class="flex flex-col flex-wrap -mx-4 sm:flex-row">
     {{ collection:articles }}
-    <div class="w-full px-4 mb-6 sm:w-1/2">
+    <div class="flex-grow w-full px-4 mb-6 sm:w-1/2">
         <a href="{{ url }}" class="flex flex-col w-full p-4 no-underline transition-all duration-300 ease-in-out shadow-none bg-img-none group bg-surface hover:shadow-bright hover:pointer">
             {{ responsive:cover_image alt="{ cover_image:alt }" class="object-cover object-center h-64" }}
             <p class="mt-2 text-base text-success group-hover:text-primary"> {{ title }} </p>
@@ -22,4 +22,11 @@
         </a>
     </div>
     {{ /collection:articles }}
+    <div class="flex-grow w-full px-4 mb-6 sm:w-1/2">
+        <div class="flex flex-col justify-center h-full p-4 text-center litems-center bg-gradient-to-br from-secondary to-primary">
+            <p class="mt-2 text-base text-success "> Currently importing old articles... </p>
+            <p class="mt-2 mb-4 text-xs italic text-success group-hover:text-primary"> stay tuned </p>
+
+        </div>
+    </div>
 </div>

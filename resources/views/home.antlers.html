@@ -78,7 +78,7 @@
         }}
         <div class="flex flex-wrap mt-4">
 
-            {{ collection:project_tags as tag }}
+            {{ collection:project_tags as tag sort="entries_count" }}
 
             {{ partial:projects/project_tag
                 :title=tag:title
