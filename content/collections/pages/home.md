@@ -1,10 +1,10 @@
 ---
-title: Home
+title: 'David A. Lindahl'
 template: home
 blueprint: homepage
 author: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1598030412
+updated_at: 1598386427
 banner: 'I''m open to new development opportunities especially if they include any of the following: Vue.js, TailwindCSS, Gridsome, Statamic, SaaS, product development, apparel design, and/or retro anything.'
 subtitle: 'Front End/UI Developer | E-commerce Entrepreneur | Outdoor Adventurer | Design Enthusiast | Photographer'
 about_text: |
