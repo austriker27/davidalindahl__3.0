@@ -16,7 +16,7 @@ sections:
           listable: hidden
           display: Url
       -
-        handle: date
+        handle: presentation_date
         field:
           mode: single
           time_enabled: false
@@ -29,8 +29,9 @@ sections:
           type: date
           localizable: false
           listable: hidden
-          display: Date
+          display: 'Presentation Date'
   sidebar:
+    display: Sidebar
     fields:
       -
         handle: slug

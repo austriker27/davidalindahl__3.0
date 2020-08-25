@@ -10,7 +10,7 @@ sections:
           required: true
           width: 50
       -
-        handle: date
+        handle: accolade_date
         field:
           mode: single
           time_enabled: false
@@ -24,7 +24,7 @@ sections:
           localizable: false
           width: 50
           listable: hidden
-          display: Date
+          display: 'Accolade Date'
   sidebar:
     display: Sidebar
     fields:
