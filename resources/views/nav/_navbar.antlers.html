@@ -40,7 +40,7 @@
                 <!-- Mobile menu button -->
                 <button
                     class="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white"
-                    @click="MenuIsOpen = true" aria-label="Main menu" aria-expanded="false">
+                    @click.prevent="MenuIsOpen = !MenuIsOpen" aria-label="Main menu" aria-expanded="false">
                     <!-- Icon when menu is closed. -->
                     <!-- Menu open: "hidden", Menu closed: "block" -->
                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -65,7 +65,7 @@
 
                 Menu open: "block", Menu closed: "hidden"
               -->
-            <div  class="hidden"
+            {{# <div class="hidden"
                 @click.away="MenuIsOpen = false">
                 <div class="px-2 pt-2 pb-3">
                     {{ nav:main_nav include_home="false"  }}
@@ -77,28 +77,31 @@
                     </a>
                     {{ /nav:main_nav }}
                 </div>
-            </div>
+            </div> #}}
 
         </div>
     </div>
 
     {{# MOBILE NAV OPEN #}}
     <div
-        class="absolute top-0 left-0 w-screen h-screen"
+        class="absolute top-0 left-0 w-screen h-screen overflow-hidden"
         x-show="MenuIsOpen"
         @click.away="MenuIsOpen = false"
-        x-transition:enter="transition ease-out duration-100 transform"
-        x-transition:enter-start="opacity-0 scale-95"
-        x-transition:enter-end="opacity-100 scale-100"
-        x-transition:leave="transition ease-in duration-75 transform"
-        x-transition:leave-start="opacity-100 scale-100"
-        x-transition:leave-end="opacity-0 scale-95"
         >
-        <div class="absolute top-0 left-0 w-screen h-screen bg-black opacity-75">
+        <div
+            class="absolute top-0 left-0 w-screen h-screen bg-black opacity-75"
+            x-transition:enter="transition ease-out duration-100 transform"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75 transform"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+        >
         </div>
         <div
             class="fixed top-0 left-0 w-64 h-full border-solid md:hidden border-b-1 border-success bg-background"
             x-show="MenuIsOpen"
+            @click.away="MenuIsOpen = false"
             x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0 transform -translate-x-full"
             x-transition:enter-end="opacity-100 transform translate-x-0"

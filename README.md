@@ -19,6 +19,7 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 - [ ] : add link fieldtype via : https://github.com/jonassiewertsen/Link-fieldtype
 - [x] : replace `.bg-img-none` with actual solution (probably use `.link` for link underlines)
 - [ ] : fix navbar logo so its aligned right
+- [ ] : add code snippet for blog posts ([good reference](https://austencam.com/posts/how-to-add-syntax-highlighting-to-a-statamic-site))
 
 ## homepage
 - [ ] : add hyperlinks to the header sections on the homepage (ex `#about`)
@@ -29,18 +30,25 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 - [ ] : add target blank to button component
 - [ ] : fix hover transition on project card component
 
+### navbar 
+- [x] : double opening bug of navbar
+- [ ] : fix overflow and lock scroll and stuff when mobile nav is open
+
 ### articles: 
 - [x] : add importing old articles disclosure
+- [ ] : add lotti animation to 'currently importing articles'
 - [ ] : add read time and word count to article
 - [ ] : use `truncate` modifier to add brief description to article cards on index
 - [ ] : add caption below images
 - [ ] : add gif support to single_image component
 - [ ] : get image gallery component working
+- [ ] : add comments
+- [ ] : add tweet this article to footer
 
 ### content:
+- [ ] : fix hotpink shadow box shadow
 - [ ] : add projects
 - [ ] : import prior writings
-- [x] : hotpink shadow box shadow
 
 ### testimonials
 - [ ] : standalone page for testimonials?
