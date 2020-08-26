@@ -4,7 +4,7 @@ template: home
 blueprint: home
 author: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1598386427
+updated_at: 1598477065
 banner: 'I''m open to new development opportunities especially if they include any of the following: Vue.js, TailwindCSS, Gridsome, Statamic, SaaS, product development, apparel design, and/or retro anything.'
 subtitle: 'Front End/UI Developer | E-commerce Entrepreneur | Outdoor Adventurer | Design Enthusiast | Photographer'
 about_text: |
@@ -14,6 +14,8 @@ about_text: |
   
   
   In the past I've used tools like Vue.js, React, Gridsome, Nuxt.js, and even, yes, jQuery, to make epic things for clients like Sony, Microsoft, and SAP Concur. At the end of the day, I love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users. Also you should know being a child of the 80s, I'm embarassingly obsessed with all things throwback design (queue the synthwave music 👾) and love designing new old school looking gear for Rainier Watch.
+seo_title: 'Front End/UI Developer | Entrepreneur | Designer | Photographer'
+seo_noindex: false
 id: home
 ---
 Howdy! 👋
