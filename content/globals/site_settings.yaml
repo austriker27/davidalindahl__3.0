@@ -2,6 +2,7 @@ title: 'Site Settings'
 data:
   meta_title: 'David A. Lindahl'
   meta_description: 'Front End/UI Developer | E-commerce Entrepreneur | Outdoor Adventurer | Design Enthusiast | Photographer'
+  meta_image: open-graph-image.jpg
   header_scripts:
     -
       description: 'fathom code'
