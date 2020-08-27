@@ -36,6 +36,11 @@ sections:
           localizable: false
           listable: hidden
           display: 'About Text'
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
   sidebar:
     display: Sidebar
     fields:

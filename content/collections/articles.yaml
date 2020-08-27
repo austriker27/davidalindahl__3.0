@@ -1,6 +1,7 @@
 title: Articles
 template: articles/show
 layout: layout
+mount: 6dd63c49-bdfd-42f1-9274-7ba8fd48c69f
 revisions: false
 route: '/wrote/{slug}'
 sort_dir: asc

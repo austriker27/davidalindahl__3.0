@@ -25,6 +25,11 @@ sections:
             - pages
           max_items: 1
           listable: false
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
   bard:
     display: Bard
     fields:

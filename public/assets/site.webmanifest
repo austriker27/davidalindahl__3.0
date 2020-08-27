@@ -1,0 +1,19 @@
+{
+    "name": "David A. Lindahl",
+    "short_name": "David A. Lindahl",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#181527",
+    "background_color": "#181527",
+    "display": "standalone"
+}
