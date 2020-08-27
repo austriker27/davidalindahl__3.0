@@ -7,6 +7,6 @@ data:
     -
       description: 'fathom code'
       code: |
-        <!-- Fathom - beautiful, simple website analytics -->
+        <!-- Fathom - beautiful, simple  website analytics -->
         <script src="https://loon.davidalindahl.com/script.js" site="ALOHVAQX" defer></script>
         <!-- / Fathom -->

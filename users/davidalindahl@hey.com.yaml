@@ -12,6 +12,6 @@ preferences:
     projects:
       columns:
         - title
-        - slug
         - side_project
         - featured
+        - end_date
