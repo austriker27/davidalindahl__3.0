@@ -159,7 +159,7 @@
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                                             </svg> #}}
                         </button>
-                        {{ nav include_home="false" }}
+                        {{ nav:main_nav include_home="false" }}
                         <div class="inline-block px-2 py-2">
                             <a class="block text-xs font-medium transition duration-150 ease-in-out link text-muted focus:text-white focus:bg-gray-700"
                                 href="{{ url }}" {{ if is_current }}
@@ -168,7 +168,7 @@
                                 {{ title }}
                             </a>
                         </div>
-                        {{ /nav }}
+                        {{ /nav:main_nav }}
                     </div>
                 </div>
 

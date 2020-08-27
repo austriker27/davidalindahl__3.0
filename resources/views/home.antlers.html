@@ -134,22 +134,22 @@
 </div>
 
 <div class="my-3 leading-loose md:my-6">
-    <div class="flex flex-col flex-wrap sm:flex-row">
+    <div class="flex flex-col flex-wrap justify-between sm:flex-row">
         <div class="flex flex-col w-full sm:w-1/3">
             {{ partial:text/headers
                 text="Experience"
-                header_type="h3"
+                header_type="h4"
             }}
 
             {{ collection:employers sort="date:asc" }}
                 <div class="mb-4">
                     {{ if employer_url }}
-                        <a class="text-sm link text-success" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
+                        <a class="text-xs link text-success" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
                     {{ else }}
-                        <p class="text-sm text-success"> {{ employer_name | lower }} </p>
+                        <p class="text-xs text-success"> {{ employer_name | lower }} </p>
                     {{ /if }}
 
-                    <p class="text-sm text-success">{{ job_roles | lower }}</p>
+                    <p class="text-xs text-success">{{ job_roles | lower }}</p>
 
                     <p class="text-xs opacity-75 text-muted">
                         {{ start_date format="Y" }}
@@ -167,15 +167,15 @@
         <div class="flex flex-col w-full sm:w-1/3">
             {{ partial:text/headers
                 text="Presentations"
-                header_type="h3"
+                header_type="h4"
             }}
 
             {{ collection:presentations }}
             <div class="mb-4">
                 {{ if url }}
-                <a class="text-sm link text-success" href="{{ url }}"> {{ title }} </a>
+                <a class="text-xs link text-success" href="{{ url }}"> {{ title }} </a>
                 {{ else }}
-                <p class="text-sm text-success"> {{ title }} </p>
+                <p class="text-xs text-success"> {{ title }} </p>
                 {{ /if }}
 
                 <p class="text-xs opacity-75 text-muted">
@@ -188,12 +188,12 @@
         <div class="flex flex-col w-full sm:w-1/3">
             {{ partial:text/headers
                 text="Accolades"
-                header_type="h3"
+                header_type="h4"
             }}
 
             {{ collection:accolades sort="date:asc" }}
                 <div class="mb-4">
-                    <p class="text-sm text-success"> {{ title }} </p>
+                    <p class="text-xs text-success"> {{ title }} </p>
 
                     <p class="text-xs opacity-75 text-muted">
                         {{ accolade_date format="M Y" }}
