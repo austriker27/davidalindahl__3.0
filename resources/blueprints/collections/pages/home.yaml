@@ -9,6 +9,13 @@ sections:
           type: text
           required: true
       -
+        handle: banner_toggle
+        field:
+          type: toggle
+          localizable: false
+          listable: hidden
+          display: 'Banner Toggle'
+      -
         handle: banner
         field:
           input_type: text
