@@ -1,4 +1,4 @@
-{{ if banner }}
+{{ if banner_toggle }}
     <div class="p-4 bg-success">
         <p class="text-indigo-900 ">{{ banner }}</p>
     </div>
@@ -107,10 +107,10 @@
         {{ /collection:projects }}
 
     </div>
-    {{ partial:components/button
+    {{# {{ partial:components/button
         text="See All"
         url="/projects"
-    }}
+    }} #}}
 
     {{ partial:text/headers
         text="Side Projects"
@@ -126,10 +126,10 @@
         {{ /collection:projects }}
 
     </div>
-    {{ partial:components/button
+    {{# {{ partial:components/button
         text="See All"
         url="/side-projects"
-    }}
+    }} #}}
 
 </div>
 

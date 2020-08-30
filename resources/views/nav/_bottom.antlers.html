@@ -2,28 +2,24 @@
     <div class="flex flex-col max-w-screen-xl px-4 py-12 mx-auto sm:px-6 md:items-center md:justify-between lg:px-8">
         <div class="flex flex-col items-center w-full">
             <div>
-                <p class="text-muted">proud member of the weird wide webring</p>
+                <p class="text-muted">member of the weird wide webring:</p>
             </div>
-            <div class="flex flex-col justify-around w-full sm:flex-row">
-                {{ partial:components/button
-                    text="Previous"
-                    url="https://weirdwidewebring.net/prev.html?ref=davidalindahl.com"
-                }}
-
-                {{ partial:components/button
-                    text="Random"
-                    url="https://weirdwidewebring.net/random.html"
-                }}
-
-                {{ partial:components/button
-                    text="All"
-                    url="https://weirdwidewebring.net/"
-                }}
-
-                {{ partial:components/button
-                    text="Next"
-                    url="https://weirdwidewebring.net/next.html?ref=davidalindahl.com"
-                }}
+            <div class="flex flex-col justify-around w-full max-w-lg mt-1 mb-6 sm:flex-row">
+                <a class="link" href="https://weirdwidewebring.net/prev.html?ref=davidalindahl.com" target="_blank">
+                    << Previous
+                </a>
+                <a class="link" href="https://weirdwidewebring.net/" target="_blank">
+                    All
+                </a>
+                <a class="link" href="https://weirdwidewebring.net/join.html" target="_blank">
+                    Join
+                </a>
+                <a class="link" href="https://weirdwidewebring.net/random.html" target="_blank">
+                    Random
+                </a>
+                <a class="link" href="https://weirdwidewebring.net/next.html?ref=davidalindahl.com" target="_blank">
+                    Next >>
+                </a>
             </div>
         </div>
         <div class="flex justify-center mt-8 md:order-2">
