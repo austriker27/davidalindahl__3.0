@@ -1,5 +1,9 @@
 title: 'Project Tags'
+template: default
+layout: layout
 revisions: false
+route: '/ignore/{id}'
+sort_dir: asc
 date_behavior:
   past: public
   future: private

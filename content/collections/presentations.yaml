@@ -2,6 +2,7 @@ title: Presentations
 template: presentations/show
 layout: layout
 revisions: false
+route: '/ignore/{id}'
 sort_dir: asc
 date_behavior:
   past: public
