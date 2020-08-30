@@ -163,7 +163,7 @@
                         <div class="inline-block px-2 py-2">
                             <a class="block text-xs font-medium transition duration-150 ease-in-out link text-muted focus:text-white focus:bg-gray-700"
                                 href="{{ url }}" {{ if is_current }}
-                                class="block p-2 text-xs font-medium transition duration-150 ease-in-out focus:text-white focus:bg-gray-700 text-success"
+                                class="block p-2 text-xs font-medium transition duration-150 ease-in-out link focus:text-white focus:bg-gray-700 text-success"
                                 {{ /if }}>
                                 {{ title }}
                             </a>
@@ -209,7 +209,7 @@
     <ul class="flex flex-col items-end mt-4">
         {{ nav:main_nav include_home="false" }}
         <li class="mb-2">
-            <a href="{{ url }}" {{ if is_current }} class="text-success" {{ /if }}>
+            <a class="link" href="{{ url }}" {{ if is_current }} class="text-success" {{ /if }}>
                 {{ title }}
             </a>
         </li>

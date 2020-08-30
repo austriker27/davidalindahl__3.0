@@ -55,6 +55,10 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 - [ ] : add images for testimonials
 - [ ] : add more testimonials
 
+### perf matters:
+- [x] : static page caching set to full
+- [ ] : purge that css
+
 ### other
 - [ ] : figure out why postcss import not letting me put `@import "tailwindcss/utilities";` at end of tailwind file
 - [ ] : get multiple tailwind applies in one line working
