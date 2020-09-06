@@ -7,6 +7,12 @@
 ## About
 Hello 3rd version my personal site! This time built completely from scratch using Statamic V3, with design inspired by V2 (which was a Paulio Scalon Gatsby template)
 
+## Deployment
+- Deployment: `netlify` branch is deployed via CD on netlify via statamic SSG
+
+## Content
+Thus all content must be edited locally then pushed up to master. Then a PR into the `netlify` branch.
+
 ## TODOs
 
 ### general:
@@ -36,6 +42,9 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 
 ### articles: 
 - [x] : add importing old articles disclosure
+- [x] : add writings from 2020
+- [x] : add writings from 2018-2019
+- [ ] : add writings from 2017 and before
 - [ ] : add lotti animation to 'currently importing articles'
 - [ ] : add read time and word count to article
 - [ ] : use `truncate` modifier to add brief description to article cards on index
@@ -49,6 +58,7 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 - [ ] : fix hotpink shadow box shadow
 - [ ] : add projects
 - [ ] : import prior writings
+
 
 ### testimonials
 - [ ] : standalone page for testimonials?

@@ -6,7 +6,7 @@ article_tags:
   - ab2e7de2-fbd8-4cc0-a275-4df95ac2313a
   - ef371a1f-adb2-4a50-8e20-44df7c86701d
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1598304039
+updated_at: 1599421759
 cover_image: articles/first-7-days-unemployment/let-jack-in.png
 id: dc20dee9-827d-439b-956c-1bf1c786cfaf
 content:

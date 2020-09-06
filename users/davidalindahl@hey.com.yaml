@@ -18,6 +18,6 @@ preferences:
     articles:
       columns:
         - title
-        - slug
         - date_published
         - date_modified
+        - cover_image
