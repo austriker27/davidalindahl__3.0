@@ -44,7 +44,7 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 - [x] : add importing old articles disclosure
 - [x] : add writings from 2020
 - [x] : add writings from 2018-2019
-- [ ] : add writings from 2017 and before
+- [x] : add writings from 2017 and before
 - [ ] : add lotti animation to 'currently importing articles'
 - [ ] : add read time and word count to article
 - [ ] : use `truncate` modifier to add brief description to article cards on index
