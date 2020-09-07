@@ -15,7 +15,6 @@ fields:
                 allow_uploads: true
                 max_files: 1
                 type: assets
-                localizable: false
                 listable: hidden
                 display: Assets
         text:
@@ -30,7 +29,6 @@ fields:
                 escape_markup: false
                 smartypants: false
                 type: markdown
-                localizable: false
                 listable: hidden
                 display: Markdown
         single_image:
@@ -44,7 +42,6 @@ fields:
                 allow_uploads: true
                 max_files: 1
                 type: assets
-                localizable: false
                 listable: hidden
                 display: 'Single Image'
             -
@@ -55,9 +52,15 @@ fields:
                   container: Container
                 inline: true
                 type: radio
-                localizable: false
                 listable: hidden
                 display: Width
+            -
+              handle: caption
+              field:
+                input_type: text
+                type: text
+                listable: hidden
+                display: Caption
         header:
           display: Header
           fields:
@@ -66,7 +69,6 @@ fields:
               field:
                 input_type: text
                 type: text
-                localizable: false
                 listable: hidden
                 display: Text
             -
@@ -80,7 +82,6 @@ fields:
                   h5: h5
                 inline: false
                 type: radio
-                localizable: false
                 listable: hidden
                 display: Radio
         image_gallery:
@@ -93,7 +94,6 @@ fields:
                 restrict: false
                 allow_uploads: true
                 type: assets
-                localizable: false
                 listable: hidden
                 display: Images
       buttons:
@@ -117,6 +117,6 @@ fields:
       fullscreen: true
       allow_source: true
       type: bard
-      localizable: false
       listable: hidden
       display: Content
+      always_show_set_button: false

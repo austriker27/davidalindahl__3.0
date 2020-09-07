@@ -15,3 +15,9 @@ preferences:
         - side_project
         - featured
         - end_date
+    articles:
+      columns:
+        - title
+        - date_published
+        - date_modified
+        - cover_image

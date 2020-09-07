@@ -6,12 +6,10 @@ article_tags:
   - ab2e7de2-fbd8-4cc0-a275-4df95ac2313a
   - ef371a1f-adb2-4a50-8e20-44df7c86701d
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1598304039
+updated_at: 1599497490
 cover_image: articles/first-7-days-unemployment/let-jack-in.png
 id: dc20dee9-827d-439b-956c-1bf1c786cfaf
 content:
-  -
-    type: paragraph
   -
     type: set
     attrs:
@@ -27,8 +25,6 @@ content:
           Like I said, what a week. So on Monday I had a little chat lined up with Braden who runs [Romega Digital](https://romegadigital.com/); a dev shop that needed some development help in Vue and Tailwind. Perfect! Because I basically like Tailwind more than milk and cereal (which I can't live without) I jumped at the chance to talk to him. So we got to chatting. I explained a tale about Laracon last year... Basically I almost went even though I'm a front-end developer because I wanted to witness [Jack McDade](https://jackmcdade.com/)'s super epic full vaporwave design makeover (see it preserved [here](http://2019.laracon.us/)). That started an avalanche of compliments about how Jack inspires me with his designs, writing prowess, online quirkiness, business philosophies and product (yada yada yada, yeah he's my hero). So Braden "hold on a second" ... I hold on, not sure what's going on and then BOOM 💥 💥 I fall out my chair when I see this:
           
   -
-    type: paragraph
-  -
     type: set
     attrs:
       values:
@@ -36,16 +32,13 @@ content:
         assets: articles/first-7-days-unemployment/let-jack-in.png
         width: container
         single_image: articles/first-7-days-unemployment/let-jack-in.png
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
       values:
         type: text
         markdown: 'Holy mackerel! So we start shooting the breeze and its incredible. And by that I mean I sit there completely speechless and stunned while Braden and Jack catch up. What. A. Monday. It probably goes without saying but big shout out to Jack for being extra rad and joining us!'
-  -
-    type: paragraph
   -
     type: set
     attrs:
@@ -54,8 +47,7 @@ content:
         assets: articles/first-7-days-unemployment/im-speechless.png
         width: container
         single_image: articles/first-7-days-unemployment/im-speechless.png
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
@@ -67,8 +59,6 @@ content:
           Here’s a little gif of the little button component I made for this project I’m working on aka my first freelance work: 
           
   -
-    type: paragraph
-  -
     type: set
     attrs:
       values:
@@ -76,8 +66,7 @@ content:
         assets: articles/first-7-days-unemployment/button-hover.gif
         width: container
         single_image: articles/first-7-days-unemployment/button-hover.gif
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
@@ -88,8 +77,6 @@ content:
           I know what you are thinking, why did I get up at 330 (on that Monday)?
           
   -
-    type: paragraph
-  -
     type: set
     attrs:
       values:
@@ -97,18 +84,13 @@ content:
         assets: articles/first-7-days-unemployment/330alarm.jpg
         width: container
         single_image: articles/first-7-days-unemployment/330alarm.jpg
-  -
-    type: paragraph
+        caption: 'Holy early batman!'
   -
     type: set
     attrs:
       values:
         type: text
         markdown: 'Okay, well that''s a whole story in itself. Well its a short story (editor note: not so short). Basically I went sunrise Mountain chasing. For those that don’t know I founded and run this little company called [Rainier Watch](https://rainierwatch.com). The whole idea is to share when Mount Rainier is out in our area because it''s the best thing since soft butter. Oh and I design and sell epic apparel. For some reason I decided I would spend my first Monday after getting laid off chasing the sunrise and live streaming it to the RW followers on the gram. I definitely picked the wrong time of year to do this thing though because sunrise is between 5 and 530 am. And I was driving an hour south to get a closer view. Well we did the darned thing ([Ryan](https://instagram.com/rivryan_photography), a rocking local photographer met up with me). So yeah we found a top secret local spot and did some Rainier watching at 5am-ish when the sun rose. It was grand but holy cow it was early. [Watch the replay on IG TV here](https://www.instagram.com/tv/CAVInJ7jsnQ/)'
-  -
-    type: paragraph
-  -
-    type: paragraph
   -
     type: set
     attrs:
@@ -117,8 +99,7 @@ content:
         assets: articles/first-7-days-unemployment/rw-ig-live.png
         width: container
         single_image: articles/first-7-days-unemployment/rw-ig-live.png
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
@@ -126,18 +107,13 @@ content:
         type: text
         markdown: 'Here''s some BTS shots (behind the scenes, Ryan taught me a hip new phrase):'
   -
-    type: paragraph
-  -
-    type: paragraph
-  -
     type: set
     attrs:
       values:
         type: single_image
         single_image: articles/first-7-days-unemployment/rw-live-btw-1.jpg
         width: container
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
@@ -145,8 +121,7 @@ content:
         type: single_image
         single_image: articles/first-7-days-unemployment/rw-live-btw-2.jpg
         width: container
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
@@ -154,10 +129,7 @@ content:
         type: single_image
         single_image: articles/first-7-days-unemployment/rw-live-btw-3.jpg
         width: container
-  -
-    type: paragraph
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
@@ -170,8 +142,6 @@ content:
           I'm stoked to help out Jamie, the local author and you should definitely check out her [website](https://jamiemcgillen.com/) and book!
           
   -
-    type: paragraph
-  -
     type: set
     attrs:
       values:
@@ -180,18 +150,13 @@ content:
           ### the weird wide webring
           
   -
-    type: paragraph
-  -
     type: set
     attrs:
       values:
         type: single_image
         single_image: articles/first-7-days-unemployment/buncha-weirdos.png
         width: container
-  -
-    type: paragraph
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
@@ -203,8 +168,6 @@ content:
           Also remarkably there's a lot of people interested in weird things it would appear. Here's my web traffic:
           
   -
-    type: paragraph
-  -
     type: set
     attrs:
       values:
@@ -212,8 +175,7 @@ content:
         assets: articles/first-7-days-unemployment/fathom-www.png
         width: container
         single_image: articles/first-7-days-unemployment/fathom-www.png
-  -
-    type: paragraph
+        caption: null
   -
     type: set
     attrs:
@@ -243,6 +205,4 @@ content:
           
           ## **_So who is in the market for an epic website handcrafted with lots of tender love, and care?_**
           
-  -
-    type: paragraph
 ---
