@@ -12,8 +12,7 @@ return [
     |
     */
 
-    'strategy' => 'null', // off because of SSG
-    // 'strategy' => 'full', turn on if deploying via forge
+    'strategy' => 'full',
 
     /*
     |--------------------------------------------------------------------------

@@ -7,12 +7,6 @@
 ## About
 Hello 3rd version my personal site! This time built completely from scratch using Statamic V3, with design inspired by V2 (which was a Paulio Scalon Gatsby template)
 
-## Deployment
-- Deployment: `netlify` branch is deployed via CD on netlify via statamic SSG
-
-## Content
-Thus all content must be edited locally then pushed up to master. Then a PR into the `netlify` branch.
-
 ## TODOs
 
 ### general:
@@ -42,13 +36,10 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 
 ### articles: 
 - [x] : add importing old articles disclosure
-- [x] : add writings from 2020
-- [x] : add writings from 2018-2019
-- [x] : add writings from 2017 and before
 - [ ] : add lotti animation to 'currently importing articles'
 - [ ] : add read time and word count to article
 - [ ] : use `truncate` modifier to add brief description to article cards on index
-- [x] : add caption below images
+- [ ] : add caption below images
 - [ ] : add gif support to single_image component
 - [ ] : get image gallery component working
 - [ ] : add comments
@@ -58,7 +49,6 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 - [ ] : fix hotpink shadow box shadow
 - [ ] : add projects
 - [ ] : import prior writings
-
 
 ### testimonials
 - [ ] : standalone page for testimonials?
@@ -72,7 +62,7 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 ### other
 - [ ] : figure out why postcss import not letting me put `@import "tailwindcss/utilities";` at end of tailwind file
 - [ ] : get multiple tailwind applies in one line working
-- [x] : add styling to markdown
+- [ ] : add styling to markdown
 
 ## theme UI components from: 
 https://gatsby-theme-terminal.netlify.app/theme-ui-components/

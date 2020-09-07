@@ -75,6 +75,5 @@ module.exports = {
       require('@tailwindcss/ui')({
           layout: 'sidebar',
       }),
-    //   require('@tailwindcss/typography'), removing because Ill use the classify statamic plugin and customize text
   ],
 }

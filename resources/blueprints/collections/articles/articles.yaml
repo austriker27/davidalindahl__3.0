@@ -8,8 +8,6 @@ sections:
         field:
           type: text
           required: true
-          validate:
-            - required
       -
         handle: cover_image
         field:
@@ -18,6 +16,7 @@ sections:
           allow_uploads: true
           max_files: 1
           type: assets
+          localizable: false
           listable: hidden
           display: 'Cover Image'
       -
@@ -32,6 +31,7 @@ sections:
           columns: 1
           rows: 1
           type: date
+          localizable: false
           width: 50
           listable: hidden
           display: 'Date Published'
@@ -47,9 +47,10 @@ sections:
           columns: 1
           rows: 1
           type: date
+          localizable: false
           width: 50
           listable: hidden
-          display: 'Date Modified'
+          display: 'Date modified'
       -
         handle: article_tags
         field:
@@ -57,6 +58,7 @@ sections:
           collections:
             - article_tags
           type: entries
+          localizable: false
           listable: hidden
           display: 'Article Tags'
   sidebar:
@@ -68,8 +70,6 @@ sections:
           type: slug
           required: true
           localizable: true
-          validate:
-            - required
   content:
     display: Content
     fields:
