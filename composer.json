@@ -13,7 +13,8 @@
         "laravel/tinker": "^2.0",
         "spatie/statamic-responsive-images": "^1.2",
         "statamic/cms": "3.0.*@beta",
-        "statamic/ssg": "^0.1.0"
+        "statamic/ssg": "^0.1.0",
+        "visuellverstehen/statamic-classify": "^1.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.2",

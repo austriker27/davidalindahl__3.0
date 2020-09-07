@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45e6bbddec9134a127a8fc5e3450da2a",
+    "content-hash": "4e2d7b0bf8ffab5adbb04abfb0b25365",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6657,6 +6657,64 @@
                 }
             ],
             "time": "2020-06-23T19:09:42+00:00"
+        },
+        {
+            "name": "visuellverstehen/statamic-classify",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/visuellverstehen/statamic-classify.git",
+                "reference": "68de9a48e03d71c3c96ecdf41e1937a12eb2c9b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/visuellverstehen/statamic-classify/zipball/68de9a48e03d71c3c96ecdf41e1937a12eb2c9b5",
+                "reference": "68de9a48e03d71c3c96ecdf41e1937a12eb2c9b5",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^7.0",
+                "php": "^7.4",
+                "statamic/cms": "3.0.*"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0",
+                "phpunit/phpunit": "^8.5"
+            },
+            "type": "statamic-addon",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic-Classify",
+                    "description": "A useful helper to add CSS classes to all of your HTML tags, created by the Bard editor."
+                },
+                "laravel": {
+                    "providers": [
+                        "VV\\Classify\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "VV\\Classify\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "visuellvertsehen"
+                }
+            ],
+            "description": "A useful helper to add CSS classes to all of your HTML tags, created by the Bard editor.",
+            "keywords": [
+                "addon",
+                "bard",
+                "statamic",
+                "v3"
+            ],
+            "time": "2020-09-05T17:49:36+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

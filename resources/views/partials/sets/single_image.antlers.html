@@ -1,10 +1,10 @@
-<div class="py-8">
+<div class="">
 
     {{ if width == "page" }}
     <div class="w-full h-auto">
         {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
         {{ if caption }}
-        <p class="text-xs italics text-muted"> {{ caption }} </p>
+        <p class="text-xs italic text-center text-muted"> {{ caption }} </p>
         {{ /if }}
     </div>
 
@@ -16,7 +16,7 @@
             {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
         </div>
         {{ if caption }}
-        <p class="text-xs italics text-muted"> {{ caption }} </p>
+        <p class="text-xs italic text-center text-muted"> {{ caption }} </p>
         {{ /if }}
     </div>
     {{ /if }}

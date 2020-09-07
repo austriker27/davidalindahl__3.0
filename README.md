@@ -48,7 +48,7 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 - [ ] : add lotti animation to 'currently importing articles'
 - [ ] : add read time and word count to article
 - [ ] : use `truncate` modifier to add brief description to article cards on index
-- [ ] : add caption below images
+- [x] : add caption below images
 - [ ] : add gif support to single_image component
 - [ ] : get image gallery component working
 - [ ] : add comments
@@ -72,7 +72,7 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 ### other
 - [ ] : figure out why postcss import not letting me put `@import "tailwindcss/utilities";` at end of tailwind file
 - [ ] : get multiple tailwind applies in one line working
-- [ ] : add styling to markdown
+- [x] : add styling to markdown
 
 ## theme UI components from: 
 https://gatsby-theme-terminal.netlify.app/theme-ui-components/
