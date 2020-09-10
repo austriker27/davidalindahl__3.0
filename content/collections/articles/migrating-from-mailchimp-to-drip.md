@@ -7,7 +7,7 @@ article_tags:
   - 90a9058f-5fa3-4a49-beba-8d9e80e63aef
   - 1737a6b7-1978-4382-9b2a-c1b29931ce04
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1599707164
+updated_at: 1599708123
 cover_image: articles/migrating-mailchimp-to-drip/CleanShot-2020-09-09-at-19.57.22@2x.jpg
 id: 7d14202d-2f03-41a6-bb58-cb637cc2fa95
 content:
@@ -21,8 +21,6 @@ content:
         text: 'Hi there, my name is David and I hate email marketing. (Well that is until recently).'
         radio: h2
         header_type: h2
-  -
-    type: paragraph
   -
     type: set
     attrs:
@@ -64,15 +62,11 @@ content:
         radio: h3
         header_type: h3
   -
-    type: paragraph
-  -
     type: set
     attrs:
       values:
         type: text
         markdown: 'This was easy. Well maybe too easy, there’s part of me that thinks I might not have done everything so its kosher with laws and permissions and things. But basically I followed an quick guide online and exported my people from Mailchimp and then imported them into Drip. I setup tags to match the tags from Mailchimp and then made sure to turn off all the MC emails. Oh and I also updated all the forms on my website to point to Drip. '
-  -
-    type: paragraph
   -
     type: set
     attrs:
@@ -139,7 +133,7 @@ content:
         markdown: |
           - Their dashboard site while beautiful is not really responsive, so don’t think about opening it on a phone without having to pinch in and pinch out all over the place. I would forgive this if there was a smartphone app, but there’s not. I’m sorry but you can’t really run a SaaS in the year 2020 without a responsive website and/or app. 
           - To have your embedded form update automatically you need jQuery installed. Luckily because I’m on the world’s most popular worst CMS, WordPress, I have jQuery on my site. But jQuery should never be necessary. I mean come on, its the year 2020! 
-          - I haven’t been able to figure out a way to do transaction emails for things like order confirmations. So if anyone knows how to wire up an email that will read order details from Woocommerce, give me a shout on [twitter](https://twitter.com/austriker27)(I really wish I could setup some slick order confirmation emails to replace the not so pretty WordPress default ones.)
+          - I haven’t been able to figure out a way to do transaction emails for things like order confirmations. So if anyone knows how to wire up an email that will read order details from Woocommerce, give me a shout on [twitter](https://twitter.com/austriker27) (I really wish I could setup some slick order confirmation emails to replace the not so pretty WordPress default ones.)
           - The documentation, while robust for some things, is lacking when it comes to using the templating language in their emails (Liquid).
           - Email live preview could be improved to render Liquid code. Example: I have a post purchase email that asks the customer how their order went. In that email I removed the liquid code because I wasn’t 100% sure it was working. I don’t want strings of code going out to customers. 
           - Customer service is really, really slow. Often it takes several business days if not more than a week. (I’m not on a premium tier that gets access to live chat so I have to wait for email replies). I think I have one outstanding email from over 7 days ago. This is not okay and I wish they did better. That being said while I was on Mailchimp, I didn’t get any customer support. (Although I was on the free tier so it’s not exactly comparable). I will say the reps have been fairly helpful so far, once they do reply.
