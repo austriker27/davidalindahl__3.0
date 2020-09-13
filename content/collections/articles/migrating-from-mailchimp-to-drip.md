@@ -7,9 +7,10 @@ article_tags:
   - 90a9058f-5fa3-4a49-beba-8d9e80e63aef
   - 1737a6b7-1978-4382-9b2a-c1b29931ce04
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1599748403
+updated_at: 1600038282
 cover_image: articles/migrating-mailchimp-to-drip/CleanShot-2020-09-09-at-19.57.22@2x.jpg
 id: 7d14202d-2f03-41a6-bb58-cb637cc2fa95
+published: false
 content:
   -
     type: set
