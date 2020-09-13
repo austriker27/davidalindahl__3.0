@@ -41,6 +41,7 @@ content:
         type: header
         text: "P R I V A C Y S H A D E I N A C T I O\_N:"
         radio: h3
+        header_type: h3
   -
     type: paragraph
   -
