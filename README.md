@@ -53,11 +53,12 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 - [ ] : get image gallery component working
 - [ ] : add comments
 - [ ] : add tweet this article to footer
+- [x] : add max width to single image
 
 ### content:
 - [ ] : fix hotpink shadow box shadow
 - [ ] : add projects
-- [ ] : import prior writings
+- [x] : import prior writings
 
 
 ### testimonials

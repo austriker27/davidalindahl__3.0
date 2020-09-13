@@ -1,4 +1,14 @@
-<div class="">
+<div class="my-8">
+
+    {{# moving this single image style to the container below#}}
+    {{# {{ if width == "fluid" }}
+    <div class="w-full h-auto max-w-lg mx-auto lg:max-w-2xl xl:max-w-3xl">
+        {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+        {{ if caption }}
+        <p class="text-xs italic text-center text-muted"> {{ caption }} </p>
+        {{ /if }}
+    </div>
+    {{ /if }} #}}
 
     {{ if width == "page" }}
     <div class="w-full h-auto">
@@ -7,14 +17,19 @@
         <p class="text-xs italic text-center text-muted"> {{ caption }} </p>
         {{ /if }}
     </div>
-
     {{ /if }}
 
     {{ if width == "container" }}
-    <div class="container mx-auto">
+    {{# <div class="container mx-auto">
         <div class="w-full h-auto">
             {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
         </div>
+        {{ if caption }}
+        <p class="text-xs italic text-center text-muted"> {{ caption }} </p>
+        {{ /if }}
+    </div> #}}
+    <div class="w-full h-auto max-w-lg mx-auto lg:max-w-2xl xl:max-w-3xl">
+        {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
         {{ if caption }}
         <p class="text-xs italic text-center text-muted"> {{ caption }} </p>
         {{ /if }}
