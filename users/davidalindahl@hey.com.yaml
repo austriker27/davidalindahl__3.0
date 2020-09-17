@@ -21,3 +21,8 @@ preferences:
         - date_published
         - date_modified
         - cover_image
+    employers:
+      columns:
+        - title
+        - slug
+        - end_date

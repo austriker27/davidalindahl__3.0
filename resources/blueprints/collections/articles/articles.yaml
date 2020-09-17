@@ -20,6 +20,8 @@ sections:
           type: assets
           listable: hidden
           display: 'Cover Image'
+          validate:
+            - required
       -
         handle: date_published
         field:

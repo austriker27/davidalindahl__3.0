@@ -72,18 +72,16 @@ fields:
                 listable: hidden
                 display: Text
             -
-              handle: radio
+              handle: header_type
               field:
                 options:
                   h1: h1
                   h2: h2
                   h3: h3
-                  h4: h4
-                  h5: h5
                 inline: false
                 type: radio
                 listable: hidden
-                display: Radio
+                display: 'Header Type'
         image_gallery:
           display: 'Image Gallery'
           fields:

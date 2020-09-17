@@ -48,6 +48,7 @@ content:
         type: header
         text: 'Tools I used:  '
         radio: h3
+        header_type: h3
   -
     type: set
     attrs:
@@ -70,6 +71,7 @@ content:
         type: header
         text: 'The Process: '
         radio: h3
+        header_type: h3
   -
     type: paragraph
   -

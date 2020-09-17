@@ -30,7 +30,7 @@ bard:
       values:
         type: header
         text: 'Fathom iFrame'
-        header_type: h4
+        header_type: h3
   -
     type: paragraph
   -

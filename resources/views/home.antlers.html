@@ -19,10 +19,10 @@
     }}
     <p class="mb-2">{{ about_text }}</p>
 
-    {{ partial:components/button
+    {{# {{ partial:components/button
         text="View Resume"
         url="https://austriker27.github.io/resume/"
-    }}
+    }} #}}
 </div>
 
 <div class="flex flex-wrap w-full my-3 -mx-4 md:my-6">
@@ -141,7 +141,7 @@
                 header_type="h4"
             }}
 
-            {{ collection:employers sort="date:asc" }}
+            {{ collection:employers }}
                 <div class="mb-4">
                     {{ if employer_url }}
                         <a class="text-xs link text-success" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
@@ -170,7 +170,7 @@
                 header_type="h4"
             }}
 
-            {{ collection:presentations }}
+            {{ collection:presentations sort="presentation_date:desc" }}
             <div class="mb-4">
                 {{ if url }}
                 <a class="text-xs link text-success" href="{{ url }}"> {{ title }} </a>
@@ -191,7 +191,7 @@
                 header_type="h4"
             }}
 
-            {{ collection:accolades sort="date:asc" }}
+            {{ collection:accolades sort="accolade_date:desc" }}
                 <div class="mb-4">
                     <p class="text-xs text-success"> {{ title }} </p>
 
