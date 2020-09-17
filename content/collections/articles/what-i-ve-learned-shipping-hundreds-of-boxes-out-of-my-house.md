@@ -7,6 +7,7 @@ article_tags:
   - fe6778ab-e213-480c-a7ff-a3e91f2f7558
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
 updated_at: 1600386937
+
 id: a81a1356-8a1f-41a6-91bb-ee9874e4bdc0
 content:
   -
@@ -86,7 +87,6 @@ content:
           But if you are still paying normal rates for USPS shipping then here's a secret: you don't have to be! There's a lot of platforms like [ShipStation](https://www.shipstation.com/) and [Shippo](https://goshippo.com/) that offer commercial shipping rates (in addition to other features). I prefer Shippo because it's user interface is better but check em both out if you ship a lot. 
           
           You can easily save $1-3 per package with commercial rates. And if you aren't shipping enough to pay for a monthly service or aren't running an ecommerce business then you need to be using [PirateShip](https://www.pirateship.com/)! Its free and is a great way to save money per shipment. Another alternative is [Sendle](https://www.sendle.com/) although I've found PirateShip to be slightly cheaper. 
-          
   -
     type: paragraph
   -
