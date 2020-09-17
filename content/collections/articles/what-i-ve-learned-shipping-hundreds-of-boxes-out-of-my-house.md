@@ -6,7 +6,7 @@ date_modified: '2020-09-13 22:35'
 article_tags:
   - fe6778ab-e213-480c-a7ff-a3e91f2f7558
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1600038261
+updated_at: 1600383733
 id: a81a1356-8a1f-41a6-91bb-ee9874e4bdc0
 content:
   -
@@ -17,7 +17,7 @@ content:
       values:
         type: text
         markdown: |
-          I often get people asking me about shipping and how I do it. I'm not a super expert but I do ship dozens of packages each month here's my tips that have saved me money and time! 💰
+          I often get people asking me about shipping and how I do it. I'm not a super expert but I do ship dozens of packages most months with [Rainier Watch](http://rainierwatch.com) here's my tips that have saved me money and time! 💰
           
           _**Are you ready to ditch those long USPS store lines? Yeah me too.  I wish someone had told me these things years ago!**_
           

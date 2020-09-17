@@ -141,7 +141,7 @@
                 header_type="h4"
             }}
 
-            {{ collection:employers sort="end_date:desc" }}
+            {{ collection:employers }}
                 <div class="mb-4">
                     {{ if employer_url }}
                         <a class="text-xs link text-success" href="{{ employer_url }}"> {{ employer_name | lower }} </a>
@@ -170,7 +170,7 @@
                 header_type="h4"
             }}
 
-            {{ collection:presentations sort="presentation_date:asc" }}
+            {{ collection:presentations sort="presentation_date:desc" }}
             <div class="mb-4">
                 {{ if url }}
                 <a class="text-xs link text-success" href="{{ url }}"> {{ title }} </a>
@@ -191,7 +191,7 @@
                 header_type="h4"
             }}
 
-            {{ collection:accolades sort="accolade_date:asc" }}
+            {{ collection:accolades sort="accolade_date:desc" }}
                 <div class="mb-4">
                     <p class="text-xs text-success"> {{ title }} </p>
 
