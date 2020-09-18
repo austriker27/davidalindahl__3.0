@@ -1,12 +1,13 @@
 ---
 title: 'What I''ve learned shipping hundreds of boxes out of my house'
 cover_image: articles/shipping-from-home/20200901_160445267_iOS.jpg
-date_published: '2020-09-13 22:35'
-date_modified: '2020-09-13 22:35'
+date_published: '2020-09-17'
+date_modified: '2020-09-17'
 article_tags:
   - fe6778ab-e213-480c-a7ff-a3e91f2f7558
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1600385443
+updated_at: 1600386937
+
 id: a81a1356-8a1f-41a6-91bb-ee9874e4bdc0
 content:
   -
