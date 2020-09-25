@@ -1,16 +1,15 @@
 ---
 title: 'Migrating from Mailchimp to Drip'
-date_published: '2020-09-09 02:55'
-date_modified: '2020-09-09 02:55'
+date_published: '2020-09-25'
+date_modified: '2020-09-25'
 article_tags:
   - fe6778ab-e213-480c-a7ff-a3e91f2f7558
   - 90a9058f-5fa3-4a49-beba-8d9e80e63aef
   - 1737a6b7-1978-4382-9b2a-c1b29931ce04
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1600038282
+updated_at: 1601009027
 cover_image: articles/migrating-mailchimp-to-drip/CleanShot-2020-09-09-at-19.57.22@2x.jpg
 id: 7d14202d-2f03-41a6-bb58-cb637cc2fa95
-published: false
 content:
   -
     type: set
@@ -25,7 +24,7 @@ content:
     attrs:
       values:
         type: text
-        markdown: 'For those who don’t know (aka everyone except my friends and family), I run a small outdoors consumer apparel e-commerce brand (aka we sell mega cool mountain branded stuff like hats and stickers) called Rainier Watch (henceforth RW). RW is a little side hustle of sorts that I run out of our spare bedroom, in my spare time. The name of the game in e-commerce has long been emails. And it hasn’t changed even as Facebook takes over the world with Instagram while we all perpetually scroll while in quarantine. So I’ve known for years that all the small business ‘how to articles’ and experts say I need to invading users of my website with a thousand pop ups, games, and freebies in order to drive newsletter signups. Being the stubborn first born that I am, I promptly ignored all that advice and probably lost out on millions (by millions I mean hundreds) of dollars in sales. My thought was as a web developer and general user of the internet, I don’t want my website to have features that I hate to see when browsing (like newsletter pop ups). So I kept a tiny footer email signup and rarely sent emails. As such my little business, that has averages yearly sales of around $10k-20k in under 3 years of being in the e-commerce game, has had a super tiny small email list (until earlier this year it was under 300). In addition to avoiding the dark patterns of newsletter signups, I didn’t particularly enjoy writing emails and or using the email platform I was on (MailChimp). So I didn’t really want to spend time cultivating a list for something I didn’t like. Well as you might have guessed, my opinion on this has changed and that sentiment has flipped on its head. '
+        markdown: 'For those who don’t know (aka everyone except my friends and family), I run a small outdoors consumer apparel e-commerce brand (aka we sell mega cool mountain branded stuff like hats and stickers) called [Rainier Watch](https://rainierwatch.com) (henceforth RW). RW is a little side hustle of sorts that I run out of our spare bedroom, in my spare time. The name of the game in e-commerce has long been emails. And it hasn’t changed even as Facebook takes over the world with Instagram while we all perpetually scroll while in quarantine. So I’ve known for years that all the small business ‘how to articles’ and experts say I need to invading users of my website with a thousand pop ups, games, and freebies in order to drive newsletter signups. Being the stubborn first born that I am, I promptly ignored all that advice and probably lost out on millions (by millions I mean hundreds) of dollars in sales. My thought was as a web developer and general user of the internet, I don’t want my website to have features that I hate to see when browsing (like newsletter pop ups). So I kept a tiny footer email signup and rarely sent emails. As such my little business, that has averages yearly sales of around $10k-20k in under 3 years of being in the e-commerce game, has had a super tiny small email list (until earlier this year it was under 300). In addition to avoiding the dark patterns of newsletter signups, I didn’t particularly enjoy writing emails and or using the email platform I was on (Mailchimp). So I didn’t really want to spend time cultivating a list for something I didn’t like. Well as you might have guessed, my opinion on this has changed and that sentiment has flipped on its head. '
   -
     type: set
     attrs:
@@ -51,7 +50,7 @@ content:
     attrs:
       values:
         type: text
-        markdown: 'Then I added the Drip JavaScript snippet to begin tracking users and 💥 all of sudden my account was costing me $50 a month. (Oops, I didn’t realize this would happen). Sadly two months flew by and I didn’t actually anything with it (I’m in talks with Drip Support and hope I can get those months refunded 🤞 ). But suddenly my schedule opened up last month and I took off my water wings to flounder around in the deep end. Oh and even better Drip had changed the pricing model a bit reducing my monthly cost to $20. Way more affordable for my little side hustle! There was much rejoicing! '
+        markdown: 'Then I added the Drip JavaScript snippet to begin tracking users and 💥 all of sudden my account was costing me $50 a month. (Oops, I didn’t realize this would happen after adding the JavaScript tracker). Then before I knew it, two months had gone by without me doing anyways. (Massive shoutout to Drip customer service who has credited me for those 2 months where I didn’t use Drip. 👏🏻👏🏻👏🏻 ). But suddenly my schedule opened up last month and I took off my water wings to flounder around in the deep end. Oh and even better—  Drip had changed the pricing model a bit reducing my monthly cost to $20. Way more affordable for my little side hustle! There was much rejoicing! '
   -
     type: set
     attrs:
@@ -65,7 +64,7 @@ content:
     attrs:
       values:
         type: text
-        markdown: 'This was easy. Well maybe too easy, there’s part of me that thinks I might not have done everything so its kosher with laws and permissions and things. But basically I followed an quick guide online and exported my people from Mailchimp and then imported them into Drip. I setup tags to match the tags from Mailchimp and then made sure to turn off all the MC emails. Oh and I also updated all the forms on my website to point to Drip. '
+        markdown: 'This was easy. Well maybe too easy, there’s part of me that second guesses that i did everything correctly from a legal standpoint. But basically I followed this article (can''t find article to insert) and exported my people from Mailchimp and then imported them into Drip. I setup tags to match the tags from Mailchimp and then made sure to turn off all the MC emails. Oh and I also updated all the forms on my website to point to Drip. '
   -
     type: set
     attrs:
@@ -99,7 +98,7 @@ content:
     attrs:
       values:
         type: header
-        text: 'The Benefits'
+        text: 'Reasons why I love Drip:'
         radio: h3
         header_type: h3
   -
@@ -114,7 +113,8 @@ content:
           - Their visual email editor hits a great sweet spot of easy to use without over complicating things or being too advanced. I think Mailchimp’s is more advanced in terms of customization but I prefer Drip’s because of this sweet spot! 
           - Split testing is everywhere. If I was better at marketing I’d split test everything (I know by disclosing I’m not split testing all the marketers reading this are about to throw their device across the room).
           - The documentation and education sections are really fantastic. Drip has released a lot of great video content that help explain the platform and I feel like I’ve just scratched the surface of the MyDrip platform.
-          - Again, as I’ve said, I drool over the dashboard; the User Interface in Drip makes its so fun and easy to use! 
+          - Related to the documentation and education, Drip also hosted [a regular webinar about ecommerce marketing this summer](https://www.drip.com/learn/webinars/ecommerce-marketing-mastery). I soaked up lots of knowledge from these and then in last summer they invited me on as a guest and did a breakdown on Rainier Watch’s customer journey. It was super fun and [you can watch the replay here](https://my.demio.com/recording/21ECtoGK)!  
+          - Again, as I’ve said, I drool over the dashboard; the user interface is one of my favorites out there.
           
   -
     type: set
@@ -130,16 +130,20 @@ content:
       values:
         type: text
         markdown: |
-          - Their dashboard site while beautiful is not really responsive, so don’t think about opening it on a phone without having to pinch in and pinch out all over the place. I would forgive this if there was a smartphone app, but there’s not. I’m sorry but you can’t really run a SaaS in the year 2020 without a responsive website and/or app. 
-          - To have your embedded form update automatically you need jQuery installed. Luckily because I’m on the world’s most popular worst CMS, WordPress, I have jQuery on my site. But jQuery should never be necessary. I mean come on, its the year 2020! 
+          - Their dashboard site while beautiful is not really responsive, so don’t think about opening it on a phone without having to pinch in and pinch out all over the place. I would forgive this if there was a smartphone app, but there’s not. I’m sorry but I strongly feel you can’t really run a SaaS in the year 2020 without a responsive website and/or app. 
+          - To have your embedded form update automatically you need jQuery installed. Luckily I’m on the world’s most popular (cough worst cough) CMS, WordPress, so I have jQuery on my site. But jQuery should never be necessary. I mean come on, its the year 2020! 
           - I haven’t been able to figure out a way to do transaction emails for things like order confirmations. So if anyone knows how to wire up an email that will read order details from Woocommerce, give me a shout on [twitter](https://twitter.com/austriker27) (I really wish I could setup some slick order confirmation emails to replace the not so pretty WordPress default ones.)
-          - The documentation, while robust for some things, is lacking when it comes to using the templating language in their emails (Liquid).
           - Email live preview could be improved to render Liquid code. Example: I have a post purchase email that asks the customer how their order went. In that email I removed the liquid code because I wasn’t 100% sure it was working. I don’t want strings of code going out to customers. 
-          - Customer service is really, really slow. Often it takes several business days if not more than a week. (I’m not on a premium tier that gets access to live chat so I have to wait for email replies). I think I have one outstanding email from over 7 days ago. This is not okay and I wish they did better. That being said while I was on Mailchimp, I didn’t get any customer support. (Although I was on the free tier so it’s not exactly comparable). I will say the reps have been fairly helpful so far, once they do reply.
-          - Hosted forms are very basic and have basically no customization. (Sidenote: This makes me ponder the idea of creating a little website app that is a form builder for Drip forms 🤔). 
+          - Customer service is really, really slow. Often it takes several business days if not more than a week. (I’m not on a premium tier that gets access to live chat so I have to wait for email replies). That being said while I was on Mailchimp, I didn’t get any customer support. (Although I was on the free tier so it’s not exactly comparable). And I will say the reps have been quite helpful so far, once they do reply.
+          - Hosted forms are very basic and have basically no customization. _Whoa, hold the ☎️! I just noticed Drip recently rolled out a new form editor and I haven't kicked the tires yet._
           
   -
-    type: paragraph
+    type: set
+    attrs:
+      values:
+        type: header
+        text: 'Automated Workflows'
+        header_type: h3
   -
     type: set
     attrs:
@@ -160,6 +164,36 @@ content:
     type: set
     attrs:
       values:
+        type: single_image
+        single_image: articles/migrating-mailchimp-to-drip/CleanShot-2020-09-24-at-21.10.06@2x.jpg
+        width: container
+        caption: 'My Welcome Series: Step 1'
+  -
+    type: paragraph
+  -
+    type: set
+    attrs:
+      values:
+        type: single_image
+        single_image: articles/migrating-mailchimp-to-drip/CleanShot-2020-09-24-at-21.10.20@2x.jpg
+        width: container
+        caption: 'Step 2'
+  -
+    type: paragraph
+  -
+    type: set
+    attrs:
+      values:
+        type: single_image
+        single_image: articles/migrating-mailchimp-to-drip/CleanShot-2020-09-24-at-21.10.25@2x.jpg
+        width: container
+        caption: 'Step 3'
+  -
+    type: paragraph
+  -
+    type: set
+    attrs:
+      values:
         type: header
         text: 'Workflows updates:'
         radio: h3
@@ -173,7 +207,8 @@ content:
         type: text
         markdown: |
           After running my workflows for 2ish months, I definitely found the most success with the welcome series I built. If it’s your first time doing email marketing, I’d recommend starting with the Welcome series and Cart emails. Of course all businesses and markets are different so definitely test things for your business! 
-          Here’s the revenues from my little mini-business in the last month or two: 
+          
+          _Here’s the revenues from my little micro business in the last month or two:_
           
           - Welcome series: $400
           - Abandoned Cart: $350
@@ -202,11 +237,11 @@ content:
         markdown: |
           I know I aired a lot of grievances and its not even Festivus yet! But my conclusion is this, I used to hate doing email marketing and now I enjoy it! So that’s a big win for Drip and I’m a very happy customer. If they could fix or work on a lot of the things above I’d be over the moon. 
           
-          I love Drip for email marketing and I think you will too! If you found this helpful and want to sign up, please use my affiliate link as a way to say thank you. Like all affiliate links I use, it won’t cost you anything and I wouldn’t be recommending it unless I honestly loved it. https://rnwt.ch/drip-email
+          I love Drip for email marketing and I think you will too! If you found this helpful and want to take Drip for a day test drive, [sign up with this link and try Drip for a 14 day free trial](https://rnwt.ch/drip-email)! (Yes, the link is an affiliate link but like all affiliate links I have on my website, it won’t cost you anything and I wouldn’t be recommending it unless I honestly loved it). 
           
-          [Tweet me](https://twitter.com/austriker27) your questions or comments*; thanks so much for reading! 
+          ## [Tweet me](https://twitter.com/austriker27) your questions or comments; thanks so much for reading! 
           
-          * _because I don't have comments setup on this website yet._
+          _(That reminds me, I need to setup comments set up on this website)._
           
   -
     type: paragraph

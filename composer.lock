@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4e2d7b0bf8ffab5adbb04abfb0b25365",
+    "content-hash": "667042c26c64d13a0d2359d3544a32b2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3689,16 +3689,16 @@
         },
         {
             "name": "statamic/cms",
-            "version": "v3.0.9",
+            "version": "v3.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/statamic/cms.git",
-                "reference": "2e69c8bfc16412b48cfdd2ee26d770e783844d38"
+                "reference": "05676700555b3a9c9565d29b63b65d893ca55810"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/statamic/cms/zipball/2e69c8bfc16412b48cfdd2ee26d770e783844d38",
-                "reference": "2e69c8bfc16412b48cfdd2ee26d770e783844d38",
+                "url": "https://api.github.com/repos/statamic/cms/zipball/05676700555b3a9c9565d29b63b65d893ca55810",
+                "reference": "05676700555b3a9c9565d29b63b65d893ca55810",
                 "shasum": ""
             },
             "require": {
@@ -3766,7 +3766,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-16T19:22:59+00:00"
+            "time": "2020-09-22T21:09:51+00:00"
         },
         {
             "name": "statamic/ssg",
@@ -9140,9 +9140,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "statamic/cms": 10
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
