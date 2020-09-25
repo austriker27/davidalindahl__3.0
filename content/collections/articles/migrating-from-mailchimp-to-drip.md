@@ -7,7 +7,7 @@ article_tags:
   - 90a9058f-5fa3-4a49-beba-8d9e80e63aef
   - 1737a6b7-1978-4382-9b2a-c1b29931ce04
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1601007382
+updated_at: 1601008566
 cover_image: articles/migrating-mailchimp-to-drip/CleanShot-2020-09-09-at-19.57.22@2x.jpg
 id: 7d14202d-2f03-41a6-bb58-cb637cc2fa95
 content:
@@ -237,7 +237,7 @@ content:
         markdown: |
           I know I aired a lot of grievances and its not even Festivus yet! But my conclusion is this, I used to hate doing email marketing and now I enjoy it! So that’s a big win for Drip and I’m a very happy customer. If they could fix or work on a lot of the things above I’d be over the moon. 
           
-          I love Drip for email marketing and I think you will too! If you found this helpful and want to sign up, you can use my affiliate link as a way to say thank you. Like all affiliate links I have on my website, it won’t cost you anything and I wouldn’t be recommending it unless I honestly loved it. https://rnwt.ch/drip-email
+          I love Drip for email marketing and I think you will too! If you found this helpful and want to take Drip for a day test drive, [sign up with this link and try Drip for a 14 day free trial](https://rnwt.ch/drip-email)! (Yes, the link is an affiliate link but like all affiliate links I have on my website, it won’t cost you anything and I wouldn’t be recommending it unless I honestly loved it). 
           
           ## [Tweet me](https://twitter.com/austriker27) your questions or comments; thanks so much for reading! 
           
