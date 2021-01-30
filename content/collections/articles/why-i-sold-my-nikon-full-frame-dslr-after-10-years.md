@@ -4,7 +4,7 @@ cover_image: articles/why-i-sold-nikon/DSCF0351.JPG
 date_published: '2021-01-29 00:06'
 date_modified: '2021-01-29 00:06'
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1611968631
+updated_at: 1612031284
 id: 86cdc2bd-84bb-4ce0-b1ee-75467139d600
 content:
   -
@@ -97,9 +97,11 @@ content:
         type: image_gallery
         images:
           - articles/why-i-sold-nikon/whittaker-bed-paw.jpg
+          - articles/why-i-sold-nikon/whittaker-dog-park.jpg
           - articles/why-i-sold-nikon/whittaker-dog-park2.jpg
+          - articles/why-i-sold-nikon/whittaker-knee.jpg
+          - articles/why-i-sold-nikon/whittaker-presents.jpg
           - articles/why-i-sold-nikon/whittaker-wide-angle-nose.jpg
-          - articles/why-i-sold-nikon/whittaker-xmas-tree.jpg
           - articles/why-i-sold-nikon/whittakerbed.jpg
   -
     type: paragraph
