@@ -1,9 +1,8 @@
-<div class="flex flex-wrap">
-    {{ image_gallery:images as img }}
-        <div class="w-full h-auto m-4 md:w-1/2 xl:1/4">
-            {{ responsive:img alt="{ img:alt }" class="w-full" }}
+<div class="grid grid-cols-12 gap-4 md:gap-8 my-6">
+    {{ images }}
+        <div class="w-full h-auto col-span-12 sm:col-span-6 xl:col-span-4">
+            {{ responsive:url alt="{ alt }" class="w-full" }}
         </div>
-        {{ images }}
-        {{ /images }}
-    {{ /image_gallery:images }}
+    {{ /images }}
+
 </div>
