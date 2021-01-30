@@ -21,6 +21,7 @@ preferences:
         - date_published
         - date_modified
         - cover_image
+      after_save: continue_editing
     employers:
       columns:
         - title
