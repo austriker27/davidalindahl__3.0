@@ -15,6 +15,14 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 
 ## TODOs
 
+### Content
+- [ ] : add zaengle things?
+- [ ] : accolades: add johnny cash for 2020 again?
+- [ ] : accolades: add shout out on syntax fm
+- [ ] : blog: add starter story article?
+
+
+
 ### general:
 - [x] : More epic hover states (underline bottom border on hover?)
 - [ ] : add favicon
@@ -26,6 +34,7 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 - [x] : replace `.bg-img-none` with actual solution (probably use `.link` for link underlines)
 - [ ] : fix navbar logo so its aligned right
 - [ ] : add code snippet for blog posts ([good reference](https://austencam.com/posts/how-to-add-syntax-highlighting-to-a-statamic-site))
+- [ ] : blog progress bar [example](https://codepen.io/KevinBatdorf/pen/wvMJMKz)
 
 ## homepage
 - [ ] : add hyperlinks to the header sections on the homepage (ex `#about`)
