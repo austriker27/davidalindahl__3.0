@@ -18,8 +18,8 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 ### Content
 - [ ] : add zaengle things?
 - [ ] : accolades: add johnny cash for 2020 again?
-- [ ] : accolades: add shout out on syntax fm
-- [ ] : blog: add starter story article?
+- [x] : accolades: add shout out on syntax fm
+- [x] : blog: add starter story article?
 
 
 

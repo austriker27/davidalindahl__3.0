@@ -22,6 +22,8 @@ sections:
           display: 'Cover Image'
           validate:
             - required
+          container: assets
+          folder: articles
       -
         handle: date_published
         field:
