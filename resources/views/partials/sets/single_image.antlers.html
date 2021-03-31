@@ -12,7 +12,13 @@
 
     {{ if width == "page" }}
     <div class="w-full h-auto">
-        {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+
+        {{ if single_image.extension == 'svg' || single_image.extension == 'gif' }}
+            <img class="w-full" src="{{ single_image }}" alt="{{ alt }}" />
+        {{ else }}
+            {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+        {{ /if }}
+
         {{ if caption }}
         <p class="text-xs italic text-center text-muted"> {{ caption }} </p>
         {{ /if }}
@@ -29,7 +35,13 @@
         {{ /if }}
     </div> #}}
     <div class="w-full h-auto max-w-lg mx-auto lg:max-w-2xl xl:max-w-3xl">
-        {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+
+        {{ if single_image.extension == 'svg' || single_image.extension == 'gif' }}
+            <img class="w-full" src="{{ single_image }}" alt="{{ alt }}" />
+        {{ else }}
+            {{ responsive:single_image alt="{ single_image:alt }" class="w-full" }}
+        {{ /if }}
+
         {{ if caption }}
         <p class="text-xs italic text-center text-muted"> {{ caption }} </p>
         {{ /if }}
