@@ -27,3 +27,10 @@ preferences:
         - title
         - slug
         - end_date
+    accolades:
+      columns:
+        - title
+        - slug
+        - accolade_date
+    article_tags:
+      after_save: continue_editing

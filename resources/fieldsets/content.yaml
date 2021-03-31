@@ -94,6 +94,38 @@ fields:
                 type: assets
                 listable: hidden
                 display: Images
+        alert:
+          display: Alert
+          fields:
+            -
+              handle: text
+              field:
+                restrict: false
+                automatic_line_breaks: true
+                automatic_links: false
+                escape_markup: false
+                smartypants: false
+                display: Text
+                type: markdown
+                icon: markdown
+                listable: hidden
+        button:
+          display: Button
+          fields:
+            -
+              handle: text
+              field:
+                display: Text
+                type: textarea
+                icon: textarea
+                listable: hidden
+            -
+              handle: url
+              field:
+                display: Url
+                type: link
+                icon: link
+                listable: hidden
       buttons:
         - h2
         - h3
