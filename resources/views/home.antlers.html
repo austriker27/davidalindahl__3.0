@@ -100,7 +100,7 @@
     }}
     <p class="mb-2">Just a smattering of my favorite projects:</p>
     <div class="flex flex-wrap -mx-4">
-        {{ collection:projects featured:exists="true" sort="end_date:desc" side_project:is="false" }}
+        {{ collection:projects featured:is="true" sort="end_date:desc" side_project:is="false" }}
 
             {{ partial:projects/project_card }}
 
