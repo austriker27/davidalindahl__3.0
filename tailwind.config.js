@@ -1,13 +1,12 @@
 module.exports = {
-    future: {
-        removeDeprecatedGapUtilities: true,
-    },
-    purge: {
-        content: [
-            './resources/views/**/*.html',
-            './resources/js/**/*.js',
-        ],
-    },
+    content: [
+        './resources/**/*.antlers.html',
+        './resources/**/*.blade.php',
+        './resources/**/*.vue',
+        './content/**/*.md',
+        './resources/views/**/*.html',
+        './resources/js/**/*.js',
+    ],
   theme: {
       backgroundImage: {
           'gradient-to-t': 'linear-gradient(to top, var(--gradient-color-stops))',
@@ -27,7 +26,7 @@ module.exports = {
             // 'hotpink': "3px 3px 0 theme('colors.primary')",
             // 'md': "3px 3px 0 theme('colors.blue-darkest', 'currentColor')",
             sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
-            default: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+            DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
             md: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
             lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
             xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
@@ -60,21 +59,13 @@ module.exports = {
           }
     },
   },
-  variants: {
-      textColor: ['responsive', 'hover', 'focus', 'group-hover'],
-      transitionProperty: ['responsive', 'hover', 'focus'],
-      backgroundClip: ['responsive', 'hover', 'focus'],
-      backgroundImage: ['responsive'],
-    //   gradientColorStops: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-      gradientColorStops: ['responsive', 'hover', 'focus'],
-      boxShadow: ['responsive', 'hover', 'focus', 'group-hover'],
-      backgroundColor: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-      opacity: ['responsive', 'hover', 'focus', 'active', 'group-hover'],
-  },
   plugins: [
-      require('@tailwindcss/ui')({
-          layout: 'sidebar',
-      }),
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/aspect-ratio'),
+    //   require('@tailwindcss/ui')({
+    //       layout: 'sidebar',
+    //   }),
     //   require('@tailwindcss/typography'), removing because Ill use the classify statamic plugin and customize text
   ],
 }
