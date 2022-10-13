@@ -1,9 +1,11 @@
 ---
+id: 7054478c-d867-492a-9346-2b057da022f0
+blueprint: projects
 title: 'Laravel News'
-description: 'Rebuilt website for PHP''s biggest news website'
+description: "As part of Zaengle team, built new website for PHP's biggest news website."
 project_url: 'https://laravel-news.com/'
-start_date: '2020-11-01 20:17'
-end_date: '2021-03-01 20:17'
+start_date: '2020-11-01'
+end_date: '2021-03-01'
 project_tags:
   - f5f0e37c-558a-4642-bfcc-fa1735f70daa
   - c41c6c9f-42fd-4bfe-939e-838e5a8d97ac
@@ -12,6 +14,6 @@ project_tags:
 featured: true
 side_project: false
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1664569069
-id: 7054478c-d867-492a-9346-2b057da022f0
+updated_at: 1665704440
+employer: a5f01f6e-c2fe-4b46-b224-165adfa6154a
 ---

@@ -1,6 +1,8 @@
 ---
+id: 53a41999-d482-40a8-815a-6fb399f8c2af
+blueprint: projects
 title: 'Alpha Universe: Public Profiles'
-description: 'Part of team that built a social media network and individual portfolio website for photographers; led work on the public facing portfolio…'
+description: 'Part of team that built a social media network and individual portfolio website for photographers; led front end development on the public facing portfolio.'
 project_url: 'https://alphauniverse.com/member/#/austriker'
 start_date: '2019-05-01'
 end_date: '2020-02-01'
@@ -15,6 +17,6 @@ project_tags:
 featured: true
 side_project: false
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1598040645
-id: 53a41999-d482-40a8-815a-6fb399f8c2af
+updated_at: 1665703981
+employer: 5ccd3cd8-3d8e-457d-8ce0-bb552329344b
 ---
