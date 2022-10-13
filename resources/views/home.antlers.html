@@ -9,7 +9,12 @@
         text="David A. Lindahl"
         header_type="h1"
     }}
-    <p class="mb-2"> {{ subtitle }} </p>
+
+    <div class="prose prose-p:text-success mb-2 prose-a:text-success">
+        <p>
+            {{ subtitle }}
+        </p>
+    </div>
 </div>
 
 <div class="my-3 leading-loose md:my-6">
@@ -17,7 +22,10 @@
         text="About"
         header_type="h2"
     }}
-    <p class="mb-2">{{ about_text }}</p>
+
+    <div class="prose prose-p:text-success mb-2 prose-a:text-success">
+        {{ about_text }}
+    </div>
 
     {{# {{ partial:components/button
         text="View Resume"

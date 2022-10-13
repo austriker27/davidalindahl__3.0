@@ -8,8 +8,10 @@
 .link {
     @apply text-muted;
     text-decoration: none;
-    background-image: linear-gradient(theme('colors.secondary'), theme('colors.secondary')), linear-gradient(theme('colors.muted'),
-            theme('colors.muted')), linear-gradient(theme('colors.primary'), theme('colors.primary'));
+    background-image:
+        linear-gradient(theme('colors.secondary'), theme('colors.secondary')),
+        linear-gradient(theme('colors.muted'), theme('colors.muted')),
+        linear-gradient(theme('colors.primary'), theme('colors.primary'));
     background-size: 20px 2px, 100% 2px, 0 2px;
     background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
     background-repeat: no-repeat;
