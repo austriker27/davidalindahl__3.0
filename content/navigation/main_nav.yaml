@@ -2,16 +2,3 @@ title: 'Main Nav'
 collections:
   - pages
 root: true
-tree:
-  -
-    entry: home
-  -
-    entry: a4808751-9412-4076-81e1-90e950a7950d
-  -
-    entry: 16b0ec65-3126-4557-b8d9-b6457d759753
-  -
-    entry: 6dd63c49-bdfd-42f1-9274-7ba8fd48c69f
-  -
-    entry: f25b6a96-6b67-43ad-a90d-57857a2a07f7
-  -
-    entry: 849d895d-d300-4008-8702-3a38abc2fde0

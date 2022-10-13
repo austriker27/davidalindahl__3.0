@@ -89,6 +89,20 @@ return [
 
     'glide' => [
         'directory' => 'img',
+        'override' => true,
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Failures
+    |--------------------------------------------------------------------------
+    |
+    | You may configure whether the console command will exit early with a
+    | failure status code when it encounters errors or warnings. You may
+    | want to do this to prevent deployments in CI environments, etc.
+    |
+    */
+
+    'failures' => false, // 'errors' or 'warnings'
 
 ];

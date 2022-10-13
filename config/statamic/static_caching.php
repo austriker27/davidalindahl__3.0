@@ -12,8 +12,7 @@ return [
     |
     */
 
-    'strategy' => 'null', // off because of SSG
-    // 'strategy' => 'full', turn on if deploying via forge
+    'strategy' => env('STATAMIC_STATIC_CACHING_STRATEGY', null),
 
     /*
     |--------------------------------------------------------------------------
@@ -66,7 +65,7 @@ return [
     | flushed from the static cache. See the documentation for more details.
     | If a custom class is not defined, the default invalidator is used.
     |
-    | https://docs.statamic.com/static-caching
+    | https://statamic.dev/static-caching
     |
     */
 
@@ -79,5 +78,18 @@ return [
         ],
 
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Ignoring Query Strings
+    |--------------------------------------------------------------------------
+    |
+    | Statamic will cache pages of the same URL but with different query
+    | parameters separately. This is useful for pages with pagination.
+    | If you'd like to ignore the query strings, you may do so.
+    |
+    */
+
+    'ignore_query_strings' => false,
 
 ];
