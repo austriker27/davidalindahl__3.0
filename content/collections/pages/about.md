@@ -20,14 +20,14 @@ bard:
       values:
         type: text
         markdown: |-
-          I'm a web developer // human // husband // puppy owner // photographer // entrepeneur // jesus lover // liverpool fc fan // footy lover // seinfeld watcher
+          I'm a web developer // dad // human // husband // puppy owner // photographer // entrepeneur // jesus lover // liverpool fc fan // footy lover // seinfeld watcher
 
-          As a developer I'm currently employed at [Zaengle](https://zaengle.com). We make websites, products, software & more while being nice and doing good. I have worked for awesome clients; small , huge, and everything inbetween! 
+          As a Front End Developer I'm currently seeking new opportunities after several years at Indigo Slate (an award winning Ad Agency in Seattle) and Zaengle Corp (A software engineering firm with a mission to Do Good, Be Nice). I love being at the intersection of design and development where I can flex my left and right side of the brain.
 
           ## In the past I've done work for:
-          - Sony
+          - Sony's Alpha Universe
           - Microsoft
-          - Small local businesses
+          - Small businesses
           - SAP Concur
           - The Ad Council
           - Hotfusion
