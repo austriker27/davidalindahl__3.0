@@ -1,10 +1,11 @@
 [build]
-publish = "storage/app/static"
-command = "php please ssg:generate"
+base = "./"
+publish = "./storage/app/static"
+command = "composer build"
 
 [context.production.environment]
-PHP_VERSION="7.4"
-APP_URL="https://v3.davidalindahl.com"
+PHP_VERSION="8"
+APP_URL="https://davidalindahl.com"
 
 [[headers]]
   for = "/feed"
