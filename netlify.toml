@@ -4,7 +4,7 @@ publish = "./storage/app/static"
 command = "composer build"
 
 [context.production.environment]
-PHP_VERSION="8"
+PHP_VERSION="8.0"
 APP_URL="https://davidalindahl.com"
 
 [[headers]]
