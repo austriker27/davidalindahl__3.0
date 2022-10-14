@@ -1,29 +1,33 @@
 {
     "private": true,
     "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run development -- --watch",
-        "watch-poll": "npm run watch -- --watch-poll",
-        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "dev": "mix",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "production": "mix --production",
         "clean": "php please stache:clear && php artisan cache:clear",
-        "compare": "npx tailwindcss build -o compare.css | grep Size && NODE_ENV=production npx tailwindcss build -o compare.css | grep Size && rm compare.css"
+        "compare": "npx tailwindcss build -o compare.css | grep Size && NODE_ENV=production npx tailwindcss build -o compare.css | grep Size && rm compare.css",
+        "update": "composer update statamic/cms --with-dependencies"
     },
     "devDependencies": {
-        "autoprefixer": "^9.7.6",
-        "cross-env": "^5.1",
-        "laravel-mix": "^4.0",
-        "laravel-mix-purgecss": "^4.1.0",
+        "autoprefixer": "^10.4.12",
+        "cross-env": "^7.0.3",
+        "css-loader": "^6.7.1",
+        "laravel-mix": "^6.0.49",
+        "postcss": "^8.4.18",
+        "postcss-focus-visible": "^7.1.0",
         "postcss-import": "^12.0.1",
-        "postcss-nested": "^4.2.1",
-        "postcss-preset-env": "^6.7.0",
-        "tailwindcss": "^1.7.3",
+        "tailwindcss": "^3.1.8",
         "vue-template-compiler": "^2.6.11"
     },
     "dependencies": {
-        "@tailwindcss/ui": "^0.5.0",
-        "alpinejs": "^2.6.0"
+        "@tailwindcss/aspect-ratio": "^0.4.2",
+        "@tailwindcss/forms": "^0.5.3",
+        "@tailwindcss/typography": "^0.5.7",
+        "alpinejs": "^3.10.4",
+        "focus-visible": "^5.2.0",
+        "sal.js": "^0.8.5"
     }
 }

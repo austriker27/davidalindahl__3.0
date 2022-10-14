@@ -37,8 +37,8 @@
         <meta name="theme-color" content="#181527">
 
 
-        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-        <script src="{{ mix src='/js/site.js' }}"></script>
+        <link rel="stylesheet" href="{{ mix src='css/site.css' }}">
+        <script src="{{ mix src='/js/site.js' }}" defer></script>
 
 
         {{ if site_settings:header_scripts }}
@@ -62,7 +62,7 @@
             <div class="hidden h-16 border-b border-opacity-75 border-solid md:inline-block border-surface">
 
             </div>
-            <div class="container min-h-screen px-2 py-4 mx-auto mt-4 sm:px-0 md:px-8">
+            <div class="container max-w-4xl min-h-screen px-2 py-4 mx-auto mt-4 sm:px-0 md:px-8">
                 {{ template_content }}
             </div>
             <div>

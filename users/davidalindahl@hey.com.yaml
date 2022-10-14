@@ -15,3 +15,23 @@ preferences:
         - side_project
         - featured
         - end_date
+        - employer
+    articles:
+      columns:
+        - title
+        - date_published
+        - date_modified
+        - cover_image
+      after_save: continue_editing
+    employers:
+      columns:
+        - title
+        - slug
+        - end_date
+    accolades:
+      columns:
+        - title
+        - slug
+        - accolade_date
+    article_tags:
+      after_save: continue_editing

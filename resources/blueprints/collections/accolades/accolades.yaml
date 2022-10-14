@@ -9,6 +9,8 @@ sections:
           type: text
           required: true
           width: 50
+          validate:
+            - required
       -
         handle: accolade_date
         field:
@@ -21,7 +23,6 @@ sections:
           columns: 1
           rows: 1
           type: date
-          localizable: false
           width: 50
           listable: hidden
           display: 'Accolade Date'
@@ -32,5 +33,6 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
+          validate:
+            - required

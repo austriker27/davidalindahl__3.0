@@ -4,7 +4,7 @@ blueprint: pages
 template: pages
 author: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1596837700
+updated_at: 1623957465
 bard:
   -
     type: set
@@ -14,6 +14,13 @@ bard:
         markdown: 'Check out these links!'
   -
     type: paragraph
+  -
+    type: set
+    attrs:
+      values:
+        type: button
+        text: 'Starter Story of Rainier Watch: How I Turned A Fun Twitter Account Into A $2K/Month Ecommerce Side Hustle'
+        url: 'https://dlndl.co/starter-story'
   -
     type: paragraph
   -
@@ -63,5 +70,8 @@ bard:
         url: 'https://rainierwatch.com/'
   -
     type: paragraph
+  -
+    type: paragraph
+seo_noindex: false
 id: 7e69b14e-27fb-42e1-b0f9-294a304be931
 ---

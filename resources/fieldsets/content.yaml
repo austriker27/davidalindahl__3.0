@@ -15,7 +15,6 @@ fields:
                 allow_uploads: true
                 max_files: 1
                 type: assets
-                localizable: false
                 listable: hidden
                 display: Assets
         text:
@@ -30,7 +29,6 @@ fields:
                 escape_markup: false
                 smartypants: false
                 type: markdown
-                localizable: false
                 listable: hidden
                 display: Markdown
         single_image:
@@ -44,7 +42,6 @@ fields:
                 allow_uploads: true
                 max_files: 1
                 type: assets
-                localizable: false
                 listable: hidden
                 display: 'Single Image'
             -
@@ -55,9 +52,15 @@ fields:
                   container: Container
                 inline: true
                 type: radio
-                localizable: false
                 listable: hidden
                 display: Width
+            -
+              handle: caption
+              field:
+                input_type: text
+                type: text
+                listable: hidden
+                display: Caption
         header:
           display: Header
           fields:
@@ -66,23 +69,19 @@ fields:
               field:
                 input_type: text
                 type: text
-                localizable: false
                 listable: hidden
                 display: Text
             -
-              handle: radio
+              handle: header_type
               field:
                 options:
                   h1: h1
                   h2: h2
                   h3: h3
-                  h4: h4
-                  h5: h5
                 inline: false
                 type: radio
-                localizable: false
                 listable: hidden
-                display: Radio
+                display: 'Header Type'
         image_gallery:
           display: 'Image Gallery'
           fields:
@@ -93,9 +92,40 @@ fields:
                 restrict: false
                 allow_uploads: true
                 type: assets
-                localizable: false
                 listable: hidden
                 display: Images
+        alert:
+          display: Alert
+          fields:
+            -
+              handle: text
+              field:
+                restrict: false
+                automatic_line_breaks: true
+                automatic_links: false
+                escape_markup: false
+                smartypants: false
+                display: Text
+                type: markdown
+                icon: markdown
+                listable: hidden
+        button:
+          display: Button
+          fields:
+            -
+              handle: text
+              field:
+                display: Text
+                type: textarea
+                icon: textarea
+                listable: hidden
+            -
+              handle: url
+              field:
+                display: Url
+                type: link
+                icon: link
+                listable: hidden
       buttons:
         - h2
         - h3
@@ -117,6 +147,6 @@ fields:
       fullscreen: true
       allow_source: true
       type: bard
-      localizable: false
       listable: hidden
       display: Content
+      always_show_set_button: false

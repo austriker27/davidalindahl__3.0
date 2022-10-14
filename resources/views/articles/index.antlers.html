@@ -10,9 +10,9 @@
 </div>
 
 <div class="flex flex-col flex-wrap -mx-4 sm:flex-row">
-    {{ collection:articles }}
+    {{ collection:articles sort="date_published:desc" }}
     <div class="flex-grow w-full px-4 mb-6 sm:w-1/2">
-        <a href="{{ url }}" class="flex flex-col w-full p-4 no-underline transition-all duration-300 ease-in-out shadow-none bg-img-none group bg-surface hover:shadow-bright hover:pointer">
+        <a href="{{ url }}" class="flex flex-col w-full h-full p-4 no-underline transition-all duration-300 ease-in-out shadow-none bg-none group bg-surface hover:shadow-bright hover:pointer">
             {{ responsive:cover_image alt="{ cover_image:alt }" class="object-cover object-center h-64" }}
             <p class="mt-2 text-base text-success group-hover:text-primary"> {{ title }} </p>
             <p class="mt-2 mb-4 text-xs text-muted group-hover:text-primary"> {{ date_published format="d M Y" }} </p>

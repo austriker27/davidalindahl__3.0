@@ -7,7 +7,21 @@
 ## About
 Hello 3rd version my personal site! This time built completely from scratch using Statamic V3, with design inspired by V2 (which was a Paulio Scalon Gatsby template)
 
+## Deployment
+- Deployment: `netlify` branch is deployed via CD on netlify via statamic SSG
+
+## Content
+Thus all content must be edited locally then pushed up to master. Then a PR into the `netlify` branch.
+
 ## TODOs
+
+### Content
+- [ ] : add zaengle things?
+- [ ] : accolades: add johnny cash for 2020 again?
+- [x] : accolades: add shout out on syntax fm
+- [x] : blog: add starter story article?
+
+
 
 ### general:
 - [x] : More epic hover states (underline bottom border on hover?)
@@ -20,6 +34,7 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 - [x] : replace `.bg-img-none` with actual solution (probably use `.link` for link underlines)
 - [ ] : fix navbar logo so its aligned right
 - [ ] : add code snippet for blog posts ([good reference](https://austencam.com/posts/how-to-add-syntax-highlighting-to-a-statamic-site))
+- [ ] : blog progress bar [example](https://codepen.io/KevinBatdorf/pen/wvMJMKz)
 
 ## homepage
 - [ ] : add hyperlinks to the header sections on the homepage (ex `#about`)
@@ -36,19 +51,24 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 
 ### articles: 
 - [x] : add importing old articles disclosure
+- [x] : add writings from 2020
+- [x] : add writings from 2018-2019
+- [x] : add writings from 2017 and before
 - [ ] : add lotti animation to 'currently importing articles'
 - [ ] : add read time and word count to article
 - [ ] : use `truncate` modifier to add brief description to article cards on index
-- [ ] : add caption below images
+- [x] : add caption below images
 - [ ] : add gif support to single_image component
 - [ ] : get image gallery component working
 - [ ] : add comments
 - [ ] : add tweet this article to footer
+- [x] : add max width to single image
 
 ### content:
 - [ ] : fix hotpink shadow box shadow
 - [ ] : add projects
-- [ ] : import prior writings
+- [x] : import prior writings
+
 
 ### testimonials
 - [ ] : standalone page for testimonials?
@@ -62,7 +82,7 @@ Hello 3rd version my personal site! This time built completely from scratch usin
 ### other
 - [ ] : figure out why postcss import not letting me put `@import "tailwindcss/utilities";` at end of tailwind file
 - [ ] : get multiple tailwind applies in one line working
-- [ ] : add styling to markdown
+- [x] : add styling to markdown
 
 ## theme UI components from: 
 https://gatsby-theme-terminal.netlify.app/theme-ui-components/
