@@ -84,16 +84,16 @@
             text="Things I use"
             header_type="h4"
         }}
-        <div class="flex flex-wrap mt-4">
+        <ul class="flex flex-wrap mt-4">
 
-            {{ collection:project_tags as tag sort="entries_count" }}
-
-            {{ partial:projects/project_tag
-                :title=tag:title
-            }}
-
+            {{ collection:project_tags as tag :sort="tag:count" }}
+                <li data-sal="slide-up" data-sal-delay="{{ count }}0">
+                    {{ partial:projects/project_tag
+                        :title=tag:title
+                    }}
+                </li>
             {{ /collection:project_tags }}
-        </div>
+        </ul>
     </div>
 </div>
 
@@ -107,38 +107,42 @@
         header_type="h2"
     }}
     <p class="mb-2">Just a smattering of my favorite projects:</p>
-    <div class="flex flex-wrap -mx-4">
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
         {{ collection:projects featured:is="true" sort="end_date:desc" side_project:is="false" }}
-
-            {{ partial:projects/project_card }}
-
+            <li class="inline-flex" data-sal="slide-up">
+                {{ partial:projects/project_card }}
+            </li>
         {{ /collection:projects }}
 
-    </div>
+    </ul>
     {{# {{ partial:components/button
         text="See All"
         url="/projects"
     }} #}}
+</div>
 
+<div class="my-3 md:my-6">
     {{ partial:text/headers
         text="Side Projects"
         header_type="h2"
     }}
-    <p class="mb-2">Some side projects that were the bee's knees, at least I thought so.</p>
+    <p class="mb-2">Some side projects that were the bee's knees, in my unbiased opinion:</p>
 
-    <div class="flex flex-wrap -mx-4">
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {{ collection:projects featured:exists="true" sort="start_date:desc" side_project:is="true" }}
 
-            {{ partial:projects/project_card }}
+            <li class="inline-flex" data-sal="slide-up">
+                {{ partial:projects/project_card }}
+            </li>
 
         {{ /collection:projects }}
 
-    </div>
+    </ul>
     {{# {{ partial:components/button
         text="See All"
         url="/side-projects"
     }} #}}
-
 </div>
 
 <div class="my-3 leading-loose md:my-6">

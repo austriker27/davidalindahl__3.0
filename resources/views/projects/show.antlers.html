@@ -34,11 +34,16 @@
         header_type="h2"
     }}
     <p>Just a smattering of my favorite projects:</p>
-    {{ collection:projects featured:exists="true" sort="date:asc|title:desc" side_project:is="false" }}
 
-    {{ partial:projects/project_card }}
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {{ collection:projects featured:exists="true" sort="date:asc|title:desc" side_project:is="false" }}
 
-    {{ /collection:projects }}
+        <li class="inline-flex" data-sal="slide-up">
+            {{ partial:projects/project_card }}
+        </li>
+
+        {{ /collection:projects }}
+    </ul>
 
     {{ partial:components/button
         text="See All"
@@ -51,11 +56,13 @@
     }}
     <p>Some side projects that were the bee's knees, at least I thought so.</p>
 
-    {{ collection:projects featured:exists="true" sort="date:asc|title:desc" side_project:is="true" }}
-
-    {{ partial:projects/project_card }}
-
-    {{ /collection:projects }}
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {{ collection:projects featured:exists="true" sort="date:asc|title:desc" side_project:is="true" }}
+            <li class="inline-flex" data-sal="slide-up">
+                {{ partial:projects/project_card }}
+            </li>
+        {{ /collection:projects }}
+    </ul>
 
     {{ partial:components/button
         text="See All"
