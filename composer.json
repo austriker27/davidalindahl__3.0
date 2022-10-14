@@ -60,7 +60,8 @@
     "prefer-stable": true,
     "scripts": {
         "build": [
-            "npm install && npm run production && php please ssg:generate"
+            "npm install && npm run production",
+            "@php please ssg:generate"
         ],
         "pre-update-cmd": [
             "Statamic\\Console\\Composer\\Scripts::preUpdateCmd"
