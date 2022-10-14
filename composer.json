@@ -60,7 +60,7 @@
     "prefer-stable": true,
     "scripts": {
         "build": [
-            "npm install && npm run production",
+            "npm run production",
             "@php please ssg:generate"
         ],
         "pre-update-cmd": [
