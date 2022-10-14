@@ -2,7 +2,7 @@
 id: 99d77a19-451e-4117-a206-cbfce4b77c14
 blueprint: projects
 title: Sprig
-description: "As part of Zaengle team, built new website for Product Hunt's #1 upvoted product of 2021."
+description: "As part of Zaengle Corp, built new website for Product Hunt's #1 upvoted product of 2021."
 project_url: 'https://sprig.com/'
 start_date: '2021-08-01'
 end_date: '2021-12-30'
