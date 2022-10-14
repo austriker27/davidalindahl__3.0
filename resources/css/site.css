@@ -24,6 +24,12 @@
     @apply text-primary;
 }
 
+.prose {
+    a {
+        @apply link;
+    }
+}
+
 
 /* .link {
     @apply text-muted;

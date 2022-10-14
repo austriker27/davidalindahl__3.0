@@ -1542,10 +1542,6 @@ select {
   --tw-rotate: 6deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.rotate-2 {
-  --tw-rotate: 2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .scale-95 {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
@@ -1562,11 +1558,11 @@ select {
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 .flex-col {
   flex-direction: column;
@@ -1775,9 +1771,6 @@ select {
   padding-top: 0px;
   padding-bottom: 0px;
 }
-.pl-16 {
-  padding-left: 4rem;
-}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -1925,11 +1918,6 @@ select {
   --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 10px 10px -5px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
 .ring {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
@@ -1955,16 +1943,6 @@ select {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.transition-opacity {
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-.transition-transform {
-  transition-property: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
 .transition-shadow {
   transition-property: box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1984,9 +1962,6 @@ select {
 }
 .duration-150 {
   transition-duration: 150ms;
-}
-.duration-500 {
-  transition-duration: 500ms;
 }
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -2348,6 +2323,44 @@ body.sal-disabled [data-sal|=flip] {
     --tw-text-opacity: 1;
     color: rgb(255 38 158 / var(--tw-text-opacity));
 }
+.prose a {
+  --tw-text-opacity: 1;
+  color: rgb(148 131 170 / var(--tw-text-opacity));
+    text-decoration: none;
+    background-image:
+        linear-gradient(#A832D7, #A832D7),
+        linear-gradient(#9483aa, #9483aa),
+        linear-gradient(#FF269E, #FF269E);
+    background-size: 20px 2px, 100% 2px, 0 2px;
+    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s linear, background-position 0.35s linear;
+}
+.prose a:hover {
+    background-size: 20px 2px, 0 2px, 100% 2px;
+    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+    --tw-text-opacity: 1;
+    color: rgb(255 38 158 / var(--tw-text-opacity));
+}
+.prose a {
+  --tw-text-opacity: 1;
+  color: rgb(148 131 170 / var(--tw-text-opacity));
+    text-decoration: none;
+    background-image:
+        linear-gradient(#A832D7, #A832D7),
+        linear-gradient(#9483aa, #9483aa),
+        linear-gradient(#FF269E, #FF269E);
+    background-size: 20px 2px, 100% 2px, 0 2px;
+    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s linear, background-position 0.35s linear;
+}
+.prose a:hover {
+    background-size: 20px 2px, 0 2px, 100% 2px;
+    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+    --tw-text-opacity: 1;
+    color: rgb(255 38 158 / var(--tw-text-opacity));
+}
 /* .link {
     @apply text-muted;
     @apply border-b;
@@ -2442,6 +2455,44 @@ li {
     --tw-text-opacity: 1;
     color: rgb(255 38 158 / var(--tw-text-opacity));
 }
+.prose a {
+  --tw-text-opacity: 1;
+  color: rgb(148 131 170 / var(--tw-text-opacity));
+    text-decoration: none;
+    background-image:
+        linear-gradient(#A832D7, #A832D7),
+        linear-gradient(#9483aa, #9483aa),
+        linear-gradient(#FF269E, #FF269E);
+    background-size: 20px 2px, 100% 2px, 0 2px;
+    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s linear, background-position 0.35s linear;
+}
+.prose a:hover {
+    background-size: 20px 2px, 0 2px, 100% 2px;
+    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+    --tw-text-opacity: 1;
+    color: rgb(255 38 158 / var(--tw-text-opacity));
+}
+.prose a {
+  --tw-text-opacity: 1;
+  color: rgb(148 131 170 / var(--tw-text-opacity));
+    text-decoration: none;
+    background-image:
+        linear-gradient(#A832D7, #A832D7),
+        linear-gradient(#9483aa, #9483aa),
+        linear-gradient(#FF269E, #FF269E);
+    background-size: 20px 2px, 100% 2px, 0 2px;
+    background-position: calc(20px * -1) 100%, 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s linear, background-position 0.35s linear;
+}
+.prose a:hover {
+    background-size: 20px 2px, 0 2px, 100% 2px;
+    background-position: calc(100% + 20px) 100%, 100% 100%, 0 100%;
+    --tw-text-opacity: 1;
+    color: rgb(255 38 158 / var(--tw-text-opacity));
+}
 /* .link {
     @apply text-muted;
     @apply border-b;
@@ -2516,8 +2567,8 @@ li {
   font-size: 1rem;
   line-height: 1.5rem;
 }
-.hover\:rotate-45:hover {
-  --tw-rotate: 45deg;
+.hover\:rotate-12:hover {
+  --tw-rotate: 12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .hover\:bg-gray-700:hover {
@@ -2553,24 +2604,10 @@ li {
   --tw-shadow-colored: 5px 5px 0 var(--tw-shadow-color), 10px 10px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
-.hover\:shadow-xl:hover {
-  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 10px 10px -5px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.hover\:shadow:hover {
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-.hover\:shadow-primary\/50:hover {
-  --tw-shadow-color: rgb(255 38 158 / 0.5);
-  --tw-shadow: var(--tw-shadow-colored);
 }
 .hover\:shadow-primary\/25:hover {
   --tw-shadow-color: rgb(255 38 158 / 0.25);
@@ -2592,10 +2629,6 @@ li {
   --tw-rotate: 12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.group:hover .group-hover\:rotate-6 {
-  --tw-rotate: 6deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .group:hover .group-hover\:text-primary {
   --tw-text-opacity: 1;
   color: rgb(255 38 158 / var(--tw-text-opacity));
@@ -2609,6 +2642,9 @@ li {
 .prose-p\:text-success :is(:where(p):not(:where([class~="not-prose"] *))) {
   --tw-text-opacity: 1;
   color: rgb(241 245 249 / var(--tw-text-opacity));
+}
+.prose-p\:opacity-75 :is(:where(p):not(:where([class~="not-prose"] *))) {
+  opacity: 0.75;
 }
 .prose-a\:text-success :is(:where(a):not(:where([class~="not-prose"] *))) {
   --tw-text-opacity: 1;
@@ -2773,15 +2809,6 @@ li {
 
   .xl\:max-w-3xl {
     max-width: 48rem;
-  }
-
-  .xl\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  .xl\:pl-16 {
-    padding-left: 4rem;
   }
 }
 
