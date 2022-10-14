@@ -2,7 +2,7 @@
 id: 2219c6de-aafb-4013-a064-fa35e92bfca5
 blueprint: projects
 title: 'Alpha Universe: Alpha Female'
-description: 'Developed page in closely partnership with designer and creative directors; robustly integrated content with client’s CMS.'
+description: 'Developed page in closely partnership with designer and creative directors; robustly integrated content with client’s CMS'
 project_url: 'https://alphauniverse.com/alpha-female'
 start_date: '2019-09-01'
 end_date: '2020-01-01'
@@ -17,6 +17,6 @@ project_tags:
 featured: false
 side_project: false
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1665703443
+updated_at: 1665768502
 employer: 5ccd3cd8-3d8e-457d-8ce0-bb552329344b
 ---

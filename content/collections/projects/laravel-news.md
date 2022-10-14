@@ -2,7 +2,7 @@
 id: 7054478c-d867-492a-9346-2b057da022f0
 blueprint: projects
 title: 'Laravel News'
-description: "As part of Zaengle Corp, built new website for PHP's biggest news website."
+description: "As part of Zaengle Corp, built new website for PHP's biggest news website"
 project_url: 'https://laravel-news.com/'
 start_date: '2020-11-01'
 end_date: '2021-03-01'
@@ -14,6 +14,6 @@ project_tags:
 featured: true
 side_project: false
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1665704440
+updated_at: 1665768608
 employer: a5f01f6e-c2fe-4b46-b224-165adfa6154a
 ---

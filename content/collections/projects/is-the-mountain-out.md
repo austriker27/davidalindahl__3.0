@@ -1,6 +1,8 @@
 ---
+id: 0bf5e54e-68f1-43c5-b5af-c59635f2b54b
+blueprint: projects
 title: 'Is The Mountain out?'
-description: 'A mountain reporting web app for Rainier Watch.'
+description: 'Designed and led front end developer for an interactive mountain reporting web app for Rainier Watch'
 project_url: 'https://isthemountainout.com'
 start_date: '2022-02-01'
 end_date: '2022-09-30'
@@ -13,6 +15,6 @@ project_tags:
 featured: true
 side_project: false
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1664569051
-id: 0bf5e54e-68f1-43c5-b5af-c59635f2b54b
+updated_at: 1665768602
+employer: 7f93a5b9-c197-46c0-8a40-aec15d34cdd2
 ---

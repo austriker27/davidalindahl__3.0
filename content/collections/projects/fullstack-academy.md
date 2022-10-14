@@ -13,7 +13,7 @@ project_tags:
 featured: true
 side_project: false
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1665704414
-description: 'As part of Zaengle Corp, built new website for a leading coding school.'
+updated_at: 1665768524
+description: 'As part of Zaengle Corp, built new website for a leading coding school'
 employer: a5f01f6e-c2fe-4b46-b224-165adfa6154a
 ---
