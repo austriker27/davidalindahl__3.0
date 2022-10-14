@@ -2,7 +2,7 @@
 @import "custom";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import 'vendor/sal.css';
+@import "vendor/sal.css";
 
 /* fancy gradient over that fills on hover but doesnt wrap */
 .link {

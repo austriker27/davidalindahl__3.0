@@ -7,4 +7,8 @@ window.Alpine = Alpine
 
 Alpine.start()
 
-sal();
+sal(
+    {
+        threshold: 0.33,
+    }
+);
