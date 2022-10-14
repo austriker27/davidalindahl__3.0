@@ -1,7 +1,7 @@
 [build]
 base = "./"
 publish = "./storage/app/static"
-command = "composer build"
+command = "npm install && npm run production && @php please ssg:generate"
 
 [context.production.environment]
 PHP_VERSION="8.0"
