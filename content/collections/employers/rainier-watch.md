@@ -7,6 +7,6 @@ employer_url: 'https://rainierwatch.com'
 job_roles: 'Founder, Designer, Marketer, Developer'
 start_date: '2013-03-13'
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1665703342
-logo: employers/display-pic-iron-ranger-with-question.jpg
+updated_at: 1665768738
+logo: employers/rw_league-spartan-logo--white.png
 ---
