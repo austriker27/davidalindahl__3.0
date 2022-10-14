@@ -4,6 +4,7 @@
 /public/vendor/statamic
 /public/img/
 /public/js/
+/public/css/
 /public/static/
 /storage/*.key
 /vendor
