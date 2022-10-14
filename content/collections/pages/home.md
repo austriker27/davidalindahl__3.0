@@ -1,12 +1,13 @@
 ---
+id: home
+blueprint: home
 title: Home
 template: home
-blueprint: home
 author: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1664569760
-banner: 'I''m open to new opportunities especially if they include any of the following: Shopify, Statamic, Craft CMS, Tailwind CSS, and/or Vue.js.'
-subtitle: 'Front End/UI Developer | E-commerce Entrepreneur | Outdoor Adventurer | Design Enthusiast | Photographer'
+updated_at: 1665766590
+banner: "I'm open to new opportunities especially if they include any of the following: Shopify, Statamic, Craft CMS, Tailwind CSS, and/or Vue.js."
+subtitle: 'Front End/UI Developer | Designer | E-commerce Operator | Entrepreneur | Outdoor Adventurer | Photographer'
 about_text: |-
   Howdy! 👋 <br><br>
 
@@ -17,7 +18,6 @@ about_text: |-
 seo_title: 'Front End/UI Developer | Entrepreneur | Designer | Photographer'
 seo_noindex: false
 banner_toggle: true
-id: home
 ---
 Howdy! 👋
 
