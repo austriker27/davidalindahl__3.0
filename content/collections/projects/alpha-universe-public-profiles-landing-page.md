@@ -1,6 +1,8 @@
 ---
+id: 3395693f-6bcf-460b-af17-9a52c99a98b7
+blueprint: projects
 title: 'Alpha Universe: Public Profiles Landing Page'
-description: 'Developed page from provided designs with simple animation and state changes.'
+description: 'Developed page from provided designs with simple animation and state changes'
 project_url: 'https://alphauniverse.com/profile/'
 start_date: '2019-08-01'
 end_date: '2019-12-12'
@@ -11,6 +13,6 @@ project_tags:
 featured: true
 side_project: false
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1598040740
-id: 3395693f-6bcf-460b-af17-9a52c99a98b7
+updated_at: 1665768509
+employer: 5ccd3cd8-3d8e-457d-8ce0-bb552329344b
 ---

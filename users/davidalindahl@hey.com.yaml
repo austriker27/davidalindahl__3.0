@@ -15,6 +15,7 @@ preferences:
         - side_project
         - featured
         - end_date
+        - employer
     articles:
       columns:
         - title

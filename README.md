@@ -1,6 +1,6 @@
 ## USES
-- Statamic V3
-- TailwindCSS
+- Statamic v3
+- TailwindCSS v3
 - AlpineJS for menu
 - Responsive Image Addon for Statamic
 
@@ -8,16 +8,15 @@
 Hello 3rd version my personal site! This time built completely from scratch using Statamic V3, with design inspired by V2 (which was a Paulio Scalon Gatsby template)
 
 ## Deployment
-- Deployment: `netlify` branch is deployed via CD on netlify via statamic SSG
+- Deployed on Ploi via CD from `deployment` branch
 
 ## Content
-Thus all content must be edited locally then pushed up to master. Then a PR into the `netlify` branch.
-
+Best practice to edit content locally and push up. But it is possible to edit on server.
 ## TODOs
 
 ### Content
-- [ ] : add zaengle things?
-- [ ] : accolades: add johnny cash for 2020 again?
+- [x] : add zaengle things?
+- [x] : accolades: add johnny cash for 2020 again?
 - [x] : accolades: add shout out on syntax fm
 - [x] : blog: add starter story article?
 
@@ -25,11 +24,11 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 
 ### general:
 - [x] : More epic hover states (underline bottom border on hover?)
-- [ ] : add favicon
-- [ ] : add social media meta ogg tags/image
+- [x] : add favicon
+- [x] : add social media meta ogg tags/image
 - [ ] : fix multiline hover states
 - [ ] : add page for "design" work (apparel design and that design.davidalindahl.com page)
-- [ ] : improve footer and hover states
+- [x] : improve footer and hover states
 - [ ] : add link fieldtype via : https://github.com/jonassiewertsen/Link-fieldtype
 - [x] : replace `.bg-img-none` with actual solution (probably use `.link` for link underlines)
 - [ ] : fix navbar logo so its aligned right
@@ -45,11 +44,11 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 - [ ] : add target blank to button component
 - [ ] : fix hover transition on project card component
 
-### navbar 
+### navbar
 - [x] : double opening bug of navbar
 - [ ] : fix overflow and lock scroll and stuff when mobile nav is open
 
-### articles: 
+### articles:
 - [x] : add importing old articles disclosure
 - [x] : add writings from 2020
 - [x] : add writings from 2018-2019
@@ -76,17 +75,14 @@ Thus all content must be edited locally then pushed up to master. Then a PR into
 - [ ] : add more testimonials
 
 ### perf matters:
-- [x] : static page caching set to full
-- [ ] : purge that css
+- [x] : static page caching set to half
 
 ### other
-- [ ] : figure out why postcss import not letting me put `@import "tailwindcss/utilities";` at end of tailwind file
-- [ ] : get multiple tailwind applies in one line working
 - [x] : add styling to markdown
 
-## theme UI components from: 
+## theme UI components from:
 https://gatsby-theme-terminal.netlify.app/theme-ui-components/
 
-## general inspiration from: 
+## general inspiration from:
 
 - Jack McDade

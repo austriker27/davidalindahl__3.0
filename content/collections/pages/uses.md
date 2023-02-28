@@ -14,7 +14,7 @@ bard:
       values:
         type: text
         markdown: |+
-          Here's what I'm using these days: 
+          Here's what I'm using these days:
 
           ## Developer Life
 
@@ -26,8 +26,8 @@ bard:
           - macOS
           - My daily browser is Firefox because its super rad and for debugging I use Firefox Developer Edition or Chrome
           - Font of choice for coding: Dank Mono
-          - CMS of choice: Statamic
-          - CSS of choice: TailwindCSS
+          - CMS of choice: Statamic (or Craft CMS when the build is big and super complex and/or needs a database)
+          - CSS of choice: Tailwind CSS
           - Vue.js or Nuxt.js or Gridsome (aka Vue across the board)
 
           ### Servers and stuff
@@ -35,7 +35,8 @@ bard:
           - I try to avoid server management as much as I can because it makes my blood boil.
           - For WordPress I've loved [Flywheel](http://rnwt.ch/flywheel)
           - For cheap shared hosting and domains with free privacy I've used [DreamHost](http://dlndl.co/dh) for years without complaint
-          - [Cloudinary](http://dlndl.co/cloudinary) makes responsive image hosting super easy because #perfmatters
+          - For Statamic and sites were continuous deployment is helpful, Ploi is my goto deployment platform (usually on a [DigitalOcean](https://dlndl.co/digitalocean) server because they are sooo good)
+          - [Cloudinary](http://dlndl.co/cloudinary) and [Imagekit](https://dlndl.co/imagekit) are both amazing for making images and media handling easier and better. because #perfmatters
 
 
           ## The Office
@@ -49,8 +50,8 @@ bard:
           ### Freelancing
           - [Harvest](http://dlndl.co/harvest) for time tracking
           - [Dropbox](http://dlndl.co/dropbox) makes cloud storge easy
-          - [Woven](http://dlndl.co/woven) is amazing for scheduling meetings. I can just generate a link for folks to grab time off my calendar
-          - I organize nearly everything on kanbans via [Trello](http://dlndl.co/trello) but am worried their Atlassian overlords will kill it. Bigger things go into Basecamp Personal
+          - ~[Woven](http://dlndl.co/woven) is amazing for scheduling meetings. I can just generate a link for folks to grab time off my calendar~ RIP Woven...
+          - ~I organize nearly everything on kanbans via [Trello](http://dlndl.co/trello) but am worried their Atlassian overlords will kill it. Bigger things go into Basecamp Personal~ JK, since 2020 I moved on from Trello and on to Notion (it has a high learning curve but is oh so powerful)
 
           ### Desktop Setup
 

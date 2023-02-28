@@ -1,3 +1,14 @@
 // This is all you.
 
-import 'alpinejs'
+import Alpine from 'alpinejs'
+import sal from 'sal.js'
+
+window.Alpine = Alpine
+
+Alpine.start()
+
+sal(
+    {
+        threshold: 0.33,
+    }
+);

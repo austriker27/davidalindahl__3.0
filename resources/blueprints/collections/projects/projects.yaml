@@ -8,18 +8,12 @@ sections:
         field:
           type: text
           required: true
-      -
-        handle: description
-        field:
-          type: textarea
-          localizable: false
-          listable: hidden
-          display: Description
+          validate:
+            - required
       -
         handle: project_url
         field:
           type: link
-          localizable: false
           listable: hidden
           display: 'Project Url'
       -
@@ -34,7 +28,6 @@ sections:
           columns: 1
           rows: 1
           type: date
-          localizable: false
           width: 50
           listable: hidden
           display: 'Start Date'
@@ -50,7 +43,6 @@ sections:
           columns: 1
           rows: 1
           type: date
-          localizable: false
           width: 50
           listable: hidden
           display: 'End Date'
@@ -61,9 +53,24 @@ sections:
           collections:
             - project_tags
           type: entries
-          localizable: false
           listable: hidden
           display: 'Project Tags'
+      -
+        handle: description
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Description
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
   sidebar:
     display: Sidebar
     fields:
@@ -71,20 +78,35 @@ sections:
         handle: slug
         field:
           type: slug
-          required: true
           localizable: true
+          validate:
+            - required
       -
         handle: featured
         field:
           type: toggle
           instructions: 'Shows as featured on the home page'
-          localizable: false
           listable: hidden
           display: Featured
       -
         handle: side_project
         field:
           type: toggle
-          localizable: false
           listable: hidden
           display: 'Side Project'
+      -
+        handle: employer
+        field:
+          max_items: 1
+          mode: select
+          create: true
+          collections:
+            - employers
+          display: Employer
+          type: entries
+          icon: entries
+          instructions: 'Select the employer of the project (if relevant)'
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
