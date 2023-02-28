@@ -1,7 +1,7 @@
 ---
 title: 'The Appex'
 description: 'We review and test the best Android Apps. Currently in pre-launch.'
-project_url: 'https://theappex.com/'
+project_url: 'https://theappex.netlify.app/'
 start_date: '2018-06-26'
 project_tags:
   - c41c6c9f-42fd-4bfe-939e-838e5a8d97ac
