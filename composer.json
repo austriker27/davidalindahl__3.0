@@ -1,5 +1,5 @@
 {
-    "name": "statamic/statamic",
+    "name": "austriker27/davidalindahl",
     "description": "David A. Lindahl Portfolio Website",
     "keywords": [
         "david a. lindahl",
@@ -18,9 +18,9 @@
         "laravel/framework": "^8.82",
         "laravel/tinker": "^2.5",
         "spatie/statamic-responsive-images": "^2.14",
-        "statamic/cms": "3.3.*",
+        "statamic/cms": "3.4.*",
         "statamic/ssg": "^1.2",
-        "visuellverstehen/statamic-classify": "^2.4"
+        "visuellverstehen/statamic-classify": "^2.6"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
