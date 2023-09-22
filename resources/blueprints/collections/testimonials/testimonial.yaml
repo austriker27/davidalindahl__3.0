@@ -81,6 +81,7 @@ tabs:
               replicator_preview: true
               hide_display: false
               folder: testimonials
+              max_files: 1
   sidebar:
     display: Sidebar
     sections:
