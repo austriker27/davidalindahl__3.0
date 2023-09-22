@@ -6,6 +6,7 @@
 /public/js/
 /public/css/
 /public/static/
+/public/vendor/
 /storage/*.key
 /vendor
 .env
