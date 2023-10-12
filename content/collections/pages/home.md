@@ -5,8 +5,8 @@ title: Home
 template: home
 author: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
 updated_by: 59e67be5-435b-45c1-a7e6-1d9a02873b6e
-updated_at: 1668654947
-banner: 'I''m open to new opportunities especially if they include any of the following: Shopify, Statamic, Craft CMS, Tailwind CSS, and/or Vue.js.'
+updated_at: 1695417283
+banner: "I'm open to new opportunities especially if they include any of the following: Shopify, Statamic, Craft CMS, Tailwind CSS, Nuxt.js, or Vue.js."
 subtitle: 'Front End/UI Developer | Designer | E-commerce Operator | Entrepreneur | Outdoor Adventurer | Photographer'
 about_text: |-
   Howdy! 👋 <br><br>
@@ -17,7 +17,7 @@ about_text: |-
   In the past I've used various web tools like Vue.js, CMSes like Statamic and Craft, HTML/CSS, Tailwind CSS, Alpine.JS, and even, yes, jQuery, to make epic digital solutions for clients like Sony, the Ad Council, Laravel News, Microsoft, and SAP Concur. At the end of the day, I love crafting intuitive digital solutions for compelling brands and creating beautiful user experiences that surprise and delight end users. Also you should know being a child of the 80s, I'm embarrassingly obsessed with all things throwback design (queue the synthwave music 👾) and love designing new apparel for for my aforementioned side project, Rainier Watch.
 seo_title: 'Front End/UI Developer Portfolio'
 seo_noindex: false
-banner_toggle: false
+banner_toggle: true
 ---
 Howdy! 👋
 
