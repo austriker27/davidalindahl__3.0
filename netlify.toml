@@ -1,0 +1,25 @@
+# Netlify build configuration for the Statamic static (SSG) build.
+#
+# Netlify's build image includes PHP, so it can run `php please ssg:generate`
+# at build time. Nothing PHP runs at request time — only the generated static
+# files in storage/app/static are served.
+#
+# Required environment variables (set in Netlify > Site settings > Environment):
+#   APP_KEY  - copy the base64:... value from your local .env (php artisan key:generate)
+#   APP_URL  - the production domain, e.g. https://davidalindahl.com
+#              IMPORTANT: this drives the absolute Glide image URLs (/img/...),
+#              not just SEO/canonical tags. If it's wrong, images 404.
+
+[build]
+  command = "composer install --no-dev --optimize-autoloader --no-interaction && npm ci && npm run production && php please ssg:generate"
+  publish = "storage/app/static"
+
+[build.environment]
+  PHP_VERSION = "8.1"
+  NODE_VERSION = "20"
+
+# Notes:
+# - Netlify automatically serves 404.html for unknown paths and resolves the
+#   pretty dir/index.html URLs Statamic emits, so no manual redirects are needed.
+# - For faster builds on large image sets, add `spatie/fork` and append
+#   `--workers=4` to the ssg:generate command.
