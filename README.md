@@ -7,8 +7,28 @@
 ## About
 Hello 3rd version my personal site! This time built completely from scratch using Statamic V3, with design inspired by V2 (which was a Paulio Scalon Gatsby template)
 
-## Deployment
-- Deployed on Ploi via CD from `deployment` branch
+## Deployment (Static / SSG → Netlify)
+This site is generated to static HTML with [`statamic/ssg`](https://statamic.dev/static-site-generator) and hosted on Netlify. No PHP runs at request time — only at build time.
+
+**How it works:** edit flat-file content locally (or in the local Control Panel) → commit → `git push`. Netlify runs the build in `netlify.toml` and republishes the static site. The Control Panel is local/author-time only; it is never deployed.
+
+**Build command** (`netlify.toml`): `composer install --no-dev --optimize-autoloader && npm ci && npm run production && php please ssg:generate`
+**Publish directory:** `storage/app/static`
+
+**Required Netlify environment variables:**
+- `APP_KEY` — the `base64:...` value from your local `.env` (`php artisan key:generate`).
+- `APP_URL` — the production domain (e.g. `https://davidalindahl.com`). This drives the absolute `/img/...` Glide image URLs, so it must be correct or images 404.
+
+**Build it locally to preview:**
+```
+composer install
+cp .env.example .env && php artisan key:generate   # first time only
+npm ci && npm run production
+php please ssg:generate            # output in storage/app/static
+```
+Notes:
+- Low-quality image placeholders are disabled (`config/statamic/responsive-images.php`) because their Glide read-back is incompatible with SSG — see that file for details.
+- Local dev requires PHP 8.0–8.3 (the locked dependencies cap below 8.4).
 
 ## Content
 Best practice to edit content locally and push up. But it is possible to edit on server.
